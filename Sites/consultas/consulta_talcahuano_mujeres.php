@@ -18,13 +18,13 @@
 
   <table>
     <tr>
-      <th>ID personal</th>
-      <th>ID buque</th>
+      <th>ID Buque</th>
+      <th>Nombre Buque</th>
+      <th>ID Personal</th>
       <th>Nombre</th>
       <th>Genero</th>
       <th>Edad</th>
       <th>Nacionalidad</th>
-      <th>Número de pasaporte</th>
     </tr>
   <?php
   foreach ($dataCollected as $p) {
