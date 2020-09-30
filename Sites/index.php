@@ -59,7 +59,7 @@
   <br>
   <br>
   <br>
-  
+
   <h3 align="left"> Buscar todos los capitanes mujeres que han pasado por algún puerto</h3>
 
   <form align="left" action="consultas/consulta_talcahuano_mujeres.php" method="post">
@@ -77,9 +77,7 @@
   <form align="left" action="consultas/consulta_buques_max_personas.php" method="post">
     <input type="submit" value="Buscar">
   </form>
-  <br>
-  <br>
-  <br>
-  <br>
+
+  echo "<img src='templates/animated.gif'/>
 </body>
 </html>
