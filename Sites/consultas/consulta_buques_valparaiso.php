@@ -7,9 +7,8 @@
 
   $busqueda = $_POST["puerto_elegido"];
   $año = $_POST["año_elegido"];
-  echo "$año+0101 00:00:00";
   $query = "SELECT * FROM buques INNER JOIN atraques ON buques.bid = atraques.bid
-   WHERE UPPER(atraques.puerto) LIKE UPPER('%$busqueda%') AND entrada BETWEEN $año'0101 00:00:00' AND $año'1231 23:59:59';";
+   WHERE UPPER(atraques.puerto) LIKE UPPER('%$busqueda%') AND entrada BETWEEN '{$año}0101 00:00:00' AND '{$año}1231 23:59:59;'";
 	$result = $db -> prepare($query);
 	$result -> execute();
 	$buques = $result -> fetchAll();
