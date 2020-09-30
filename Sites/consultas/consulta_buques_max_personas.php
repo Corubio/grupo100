@@ -16,10 +16,10 @@
 
 	<table>
     <tr>
-      <th>ID</th>
+      <th>ID Buque</th>
       <th>ID Naviera</th>
       <th>Nombre</th>
-      <th>Cantidad de trabajadores</th>
+      <th>Patente</th>
     </tr>
   <?php
 	foreach ($buques as $b) {
