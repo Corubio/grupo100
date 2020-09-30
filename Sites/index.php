@@ -6,7 +6,7 @@
 
   <br>
 
-  <img align="center" src='templates/animated.gif'/>
+  <img src='templates/animated.gif' class="center"/>
 
   <br>
 
