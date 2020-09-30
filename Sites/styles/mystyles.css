@@ -9,12 +9,14 @@ input {
 
 input[type=text] {
     font-size: 20px;
+    float: left;
 }
 
 input[type=submit] {
     width: 10em;
     height: 2em;
     font-size: 25px;
+    float: left;
 }
 
 button {
