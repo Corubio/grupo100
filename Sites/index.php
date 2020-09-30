@@ -47,6 +47,12 @@
   <h3 align="center">¿Quieres ver todos los buques que hayan estado en Mejillones al mismo tiempo que el buque Magnolia?</h3>
 
   <form align="center" action="consultas/consulta_buques_mejillones.php" method="post">
+    Lugar:
+    <input type="text" name="lugar_elegido">
+    <br/>
+    Buque:
+    <input type="text" name="buque_elegido">
+    <br/><br/>
     <input type="submit" value="Buscar">
   </form>
 

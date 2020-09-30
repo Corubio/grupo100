@@ -6,7 +6,14 @@
   #Llama a conexión, crea el objeto PDO y obtiene la variable $db
   require("../config/conexion.php");
 
-	$query = "SELECT * FROM buques where pid = $id_nuevo;";
+  $lugar = $_POST["lugar_elegido"];
+  $buque = $_POST["buque_elegido"];
+
+  $query = "SELECT * FROM(SELECT a.entrada, a.salida FROM(SELECT * FROM buques INNER JOIN 
+    atraques ON buques.bid = atraques.bid WHERE UPPER(buques.nombre) LIKE UPPER('%$buque%'))
+    AS a WHERE UPPER(a.puerto) LIKE UPPER('%$lugar%')) AS b, (SELECT * FROM buques INNER JOIN
+    atraques ON buques.bid = atraques.bid WHERE UPPER(atraques.puerto) LIKE UPPER('%$lugar%')) 
+    AS c WHERE c.entrada BETWEEN b.entrada AND b.salida OR c.salida BETWEEN b.entrada AND b.salida;";
 	$result = $db -> prepare($query);
 	$result -> execute();
 	$buques = $result -> fetchAll();
