@@ -6,7 +6,7 @@
   #Llama a conexión, crea el objeto PDO y obtiene la variable $db
   require("../config/conexion.php");
 
-  $lugar = $_POST["lugar_elegido"];
+  $lugar = $_POST["lugar_elegido_año"];
   $buque = $_POST["buque_elegido"];
 
   $query = "SELECT * FROM(SELECT a.entrada, a.salida FROM(SELECT * FROM buques INNER JOIN 

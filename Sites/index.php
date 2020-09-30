@@ -48,7 +48,7 @@
 
   <form align="left" action="consultas/consulta_buques_mejillones.php" method="post">
     Lugar:
-    <input type="text" name="lugar_elegido">
+    <input type="text" name="lugar_elegido_año">
     <br/>
     Buque:
     <input type="text" name="buque_elegido">
