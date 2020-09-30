@@ -6,6 +6,10 @@
 
   <br>
 
+  <img align="center" src='templates/animated.gif'/>
+
+  <br>
+
   <h3 align="left"> Nombre de todas las Navieras</h3>
 
   <form align="left" action="consultas/consulta_navieras.php" method="post">
@@ -78,6 +82,5 @@
     <input type="submit" value="Buscar">
   </form>
 
-  echo "<img src='templates/animated.gif'/>
 </body>
 </html>
