@@ -16,9 +16,9 @@
   <br>
   <br>
 
-  <h3 align="center"> Buscar todos los buques con la naviera solicitada (Francis Drake S.A)</h3>
+  <h3 align="left"> Buscar todos los buques con la naviera solicitada (Francis Drake S.A)</h3>
 
-  <form align="center" action="consultas/consulta_buques_francis.php" method="post">
+  <form align="left" action="consultas/consulta_buques_francis.php" method="post">
     Naviera:
     <input type="text" name="naviera_elegida">
     <br/><br/>
