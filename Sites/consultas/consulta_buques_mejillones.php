@@ -32,7 +32,6 @@
       <th>País</th>
       <th>Tipo</th>
       <th>ID Capitán</th>
-      <th>ID Atraque</th>
       <th>Puerto</th>
       <th>Fecha Entrada</th>
       <th>Fecha Salida</th>
@@ -40,7 +39,7 @@
   <?php
 	foreach ($buques as $b) {
       echo "<tr><td>$b[0]</td><td>$b[1]</td><td>$b[2]</td><td>$b[3]</td><td>$b[4]</td><td>$b[5]</td><td>$b[6]</td><td>$b[7]
-      </td><td>$b[8]</td><td>$b[9]</td><td>$b[10]</td><td>$b[11]</td><td>$b[12]</td></tr>";
+      </td><td>$b[8]</td><td>$b[9]</td><td>$b[10]</td><td>$b[11]</td></tr>";
 	}
   ?>
 	</table>
