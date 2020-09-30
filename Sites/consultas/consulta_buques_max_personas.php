@@ -5,7 +5,9 @@
   #Llama a conexión, crea el objeto PDO y obtiene la variable $db
   require("../config/conexion.php");
 
- 	$query = "SELECT * FROM buques where pid = $id_nuevo;";
+  $query = "SELECT buques.bid, buques.nid, buques.nombre, COUNT(buques.bid) AS trabajadores 
+   FROM buques INNER JOIN personal ON buques.bid = personal.bid GROUP BY buques.bid ORDER BY 
+   trabajadores DESC;;";
 	$result = $db -> prepare($query);
 	$result -> execute();
 	$buques = $result -> fetchAll();

@@ -62,6 +62,9 @@
   <h3 align="left"> Buscar todos los capitanes mujeres que han pasado por algún puerto</h3>
 
   <form align="left" action="consultas/consulta_talcahuano_mujeres.php" method="post">
+    Lugar:
+    <input type="text" name="lugar_elegido">
+    <br/>
     <input type="submit" value="Buscar">
   </form>
   <br>

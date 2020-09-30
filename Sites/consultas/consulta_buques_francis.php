@@ -7,8 +7,8 @@
 
   $busqueda = $_POST["naviera_elegida"];
   $busqueda_año = $_POST["año_elegido"];
-
- 	$query = "SELECT * FROM navieras WHERE UPPER(nombre) LIKE UPPER('%$busqueda%');";
+  
+ 	$query = "SELECT * FROM buques INNER JOIN navieras ON buques.nid = navieras.nid WHERE UPPER(navieras.nombre) LIKE UPPER('%$busqueda%');";
 	$result = $db -> prepare($query);
 	$result -> execute();
 	$buques = $result -> fetchAll();

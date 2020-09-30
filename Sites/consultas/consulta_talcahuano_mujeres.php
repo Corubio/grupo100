@@ -5,7 +5,12 @@
   <?php
   require("../config/conexion.php"); #Llama a conexión, crea el objeto PDO y obtiene la variable $db
 
-  $query = "SELECT * FROM pokemones WHERE tipo='$var';";
+  $busqueda = $_POST["lugar_elegido"];
+
+  $query = "SELECT * FROM(SELECT buques.bid, buques.nombre, buques.id_capitan, personal.nombre, personal.genero, personal.edad,
+    personal.nacionalidad, personal.numero_pasaporte FROM buques INNER JOIN personal ON buques.id_capitan = personal.pid
+    WHERE personal.genero = 'mujer') AS a, (SELECT buques.bid, atraques.puerto FROM buques INNER JOIN atraques 
+    ON buques.bid = atraques.bid WHERE UPPER(atraques.puerto) LIKE UPPER('%$busqueda%')) AS b WHERE a.bid = b.bid;";
   $result = $db -> prepare($query);
   $result -> execute();
   $dataCollected = $result -> fetchAll(); #Obtiene todos los resultados de la consulta en forma de un arreglo
