@@ -16,7 +16,7 @@ input[type=submit] {
     font-size: 25px;
 }
 
-button {
+button.left {
     background-color: rgb(0, 66, 128);
     color: white;
     border: none;

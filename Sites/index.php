@@ -2,7 +2,7 @@
 
 <body>
   <h1 align="center">Buques, Navieras y todo sobre ellas </h1>
-  <p style="text-align:center;">Encuentra lo necesario para informarte sobre los recorridos e información marítima actual.</p>
+  <p style="text-align:left;">Encuentra lo necesario para informarte sobre los recorridos e información marítima actual.</p>
 
   <br>
 
@@ -44,7 +44,7 @@
   <br>
   <br>
 
-  <h3 align="center">Buscar todos los buques que hayan estado en algún lugar al mismo tiempo que algún buque</h3>
+  <h3 align="center">Buscar todos los buques que hayan estado en algún lugar (Mejillones) al mismo tiempo que algún buque (Magnolia)</h3>
 
   <form align="center" action="consultas/consulta_buques_mejillones.php" method="post">
     Lugar:
