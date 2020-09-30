@@ -2,7 +2,7 @@
 
 <body>
   <h1 align="center">Buques, Navieras y todo sobre ellas </h1>
-  <p style="text-align:left;">Encuentra lo necesario para informarte sobre los recorridos e información marítima actual.</p>
+  <p style="text-align:left;">Encuentra aquí lo necesario para informarte sobre los recorridos marítimos.</p>
 
   <br>
 
