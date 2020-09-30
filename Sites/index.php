@@ -48,7 +48,7 @@
 
   <form align="left" action="consultas/consulta_buques_mejillones.php" method="post">
     Lugar:
-    <input type="text" name="lugar_elegido_año">
+    <input type="text" name="lugar_elegido_buque">
     <br/>
     Buque:
     <input type="text" name="buque_elegido">
@@ -59,6 +59,7 @@
   <br>
   <br>
   <br>
+  
   <h3 align="left"> Buscar todos los capitanes mujeres que han pasado por algún puerto</h3>
 
   <form align="left" action="consultas/consulta_talcahuano_mujeres.php" method="post">
