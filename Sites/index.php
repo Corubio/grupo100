@@ -1,12 +1,12 @@
 <?php include('templates/header.html');   ?>
 
 <body>
-  <h1 align="center">Biblioteca Marítima </h1>
-  <p style="text-align:center;">Aquí podrás encontrar información sobre buques y sus recorridos.</p>
+  <h1 align="center">Buques, Navieras y todo sobre ellas </h1>
+  <p style="text-align:center;">Encuentra lo necesario para informarte sobre los recorridos e información marítima actual.</p>
 
   <br>
 
-  <h3 align="center"> ¿Quieres ver el nombre de todas las navieras?</h3>
+  <h3 align="center"> Nombre de todas las Navieras</h3>
 
   <form align="center" action="consultas/consulta_navieras.php" method="post">
     <input type="submit" value="Buscar">
@@ -16,7 +16,7 @@
   <br>
   <br>
 
-  <h3 align="center"> ¿Quieres ver todos los buques con alguna naviera (Francis Drake S.A)?</h3>
+  <h3 align="center"> Buscar todos los buques con la naviera solicitada (Francis Drake S.A)</h3>
 
   <form align="center" action="consultas/consulta_buques_francis.php" method="post">
     Naviera:
@@ -29,7 +29,7 @@
   <br>
   <br>
 
-  <h3 align="center"> ¿Quieres buscar los buques que han atracado en algún lugar (Valparaíso) y un año (2020)?</h3>
+  <h3 align="center"> Buscar los buques que han atracado en algún lugar solicitado (Valparaíso) y un año solicitado (2020)</h3>
 
   <form align="center" action="consultas/consulta_buques_valparaiso.php" method="post">
     Lugar de atraque:
@@ -44,7 +44,7 @@
   <br>
   <br>
 
-  <h3 align="center">¿Quieres ver todos los buques que hayan estado en Mejillones al mismo tiempo que el buque Magnolia?</h3>
+  <h3 align="center">Buscar todos los buques que hayan estado en algún lugar al mismo tiempo que algún buque</h3>
 
   <form align="center" action="consultas/consulta_buques_mejillones.php" method="post">
     Lugar:
@@ -59,7 +59,7 @@
   <br>
   <br>
   <br>
-  <h3 align="center"> ¿Quieres buscar todos los capiteanes mujeres que han pasado por el puerto Talcahuano?</h3>
+  <h3 align="center"> Buscar todos los capitanes mujeres que han pasado por algún puerto</h3>
 
   <form align="center" action="consultas/consulta_talcahuano_mujeres.php" method="post">
     <input type="submit" value="Buscar">
