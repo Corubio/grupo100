@@ -1,8 +1,8 @@
 <?php include('templates/header.html');   ?>
 
 <body>
-  <h1 align="center">Buques, Navieras y todo sobre ellas </h1>
-  <p style="text-align:center;">Encuentra aquí lo necesario para informarte sobre los recorridos marítimos.</p>
+  <h1 align="center">Recorridos marítimos de Buques </h1>
+  <p style="text-align:center;">Aquí podrás informarte sobre recorridos de los buques solicitados, incluyendo información interna de estos.</p>
 
   <br>
 
