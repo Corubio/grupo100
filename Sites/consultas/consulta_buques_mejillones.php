@@ -9,9 +9,13 @@
   $lugar = $_POST["lugar_elegido_buque"];
   $buque = $_POST["buque_elegido"];
 
-  $query = "SELECT * FROM(SELECT a.entrada, a.salida FROM(SELECT * FROM buques INNER JOIN atraques ON buques.bid = atraques.bid WHERE UPPER(buques.nombre) 
-    LIKE UPPER('%$buque%')) AS a WHERE UPPER(a.puerto) LIKE UPPER('%$lugar%')) AS b, (SELECT * FROM buques INNER JOIN atraques ON buques.bid = atraques.bid
-    WHERE UPPER(atraques.puerto) LIKE UPPER('%$lugar%')) AS c WHERE c.entrada BETWEEN b.entrada AND b.salida OR c.salida BETWEEN b.entrada AND b.salida;";
+  $query = "SELECT * FROM(SELECT a.entrada, a.salida FROM(SELECT * FROM buques INNER JOIN 
+    atraques ON buques.bid = atraques.bid WHERE UPPER(buques.nombre) LIKE UPPER('%$buque%')) 
+    AS a WHERE UPPER(a.puerto) LIKE UPPER('%$lugar%')) AS b, (SELECT buques.bid, buques.nid,
+    buques.nombre, buques.patente, buques.pais_origen, buques.tipo, buques.id_capitan, atraques.puerto,
+    atraques.entrada, atraques.salida FROM buques INNER JOIN atraques ON buques.bid = atraques.bid 
+    WHERE UPPER(atraques.puerto) LIKE UPPER('%$lugar%')) AS c WHERE c.entrada BETWEEN b.entrada 
+    AND b.salida OR c.salida BETWEEN b.entrada AND b.salida;";
 	$result = $db -> prepare($query);
 	$result -> execute();
 	$buques = $result -> fetchAll();
