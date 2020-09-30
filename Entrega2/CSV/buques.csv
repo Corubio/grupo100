@@ -1,251 +1,251 @@
-bid,nid,nombre,patente,pais,tipo,tipo_pesca,max_containers,max_ton,max_lit,id_capitan
-0,0,Abbotsham,ZX2922,India,pesquero,hilo,,,,1070
-1,0,Abdiel,PM8536,Canada,pesquero,red,,,,1186
-2,1,Abeille,VC7492,Singapur,pesquero,arrastre,,,,1483
-3,2,Abelardo,LS5992,Costa Rica,pesquero,manos,,,,1629
-4,3,Abelia,PJ5481,Argentina,carga,,12853,80873,,1235
-5,4,Abercrombie,LX6914,Qatar,petrolero,,,,747998,1472
-6,5,Aberdeen,EH9187,Qatar,petrolero,,,,621254,30
-7,6,Aberford,ST8633,Mexico,pesquero,arpon,,,,1557
-8,2,Aberfoyle,EY2745,Japon,pesquero,arrastre,,,,465
-9,7,abergavenny,LA5643,Siria,petrolero,,,,742270,316
-10,8,Abigail,AU5998,Irlanda,pesquero,arrastre,,,,807
-11,9,Abingdon,ET5609,Nicaragua,pesquero,red,,,,1315
-12,8,abondance,MO4425,Filipinas,pesquero,hilo,,,,185
-13,5,aboukir,BY5212,Colombia,petrolero,,,,667660,675
-14,8,Abrahan,EG8528,Brasil,pesquero,arpon,,,,318
-15,5,Abrams Oferta,QD4440,Estados Unidos,petrolero,,,,659028,1167
-16,2,Abundancia,VX5561,Estados Unidos,pesquero,arpon,,,,636
-17,10,Abisinia,VT6220,Mexico,carga,,12828,92920,,488
-18,1,Acacia,XK7318,Argentina,pesquero,red,,,,700
-19,5,Acanto,WW2485,Portugal,petrolero,,,,679090,380
-20,3,acasta,HV2199,Mexico,carga,,11775,120647,,1486
-21,1,As,ID7819,Panama,pesquero,manos,,,,1528
-22,11,Acertif,QA2495,Nueva Zelanda,pesquero,hilo,,,,260
-23,12,achates,WF7217,Islas Malvinas,carga,,12170,133012,,441
-24,3,acheron,BN4195,Costa Rica,carga,,10673,141691,,64
-25,13,Achille,UW2735,Austria,carga,,10712,113908,,1521
-26,13,Aquiles,EF7582,Belgica,carga,,6206,108484,,491
-27,10,Aconito,OT5458,Mexico,carga,,10805,128236,,1622
-28,0,Bellota,YN4644,Islas Malvinas,pesquero,manos,,,,186
-29,14,Acteon,FS3778,Indonesia,carga,,8470,142553,,1105
-30,8,acteon,VW7522,Australia,pesquero,red,,,,1093
-31,1,Calypso,VI4743,Canada,pesquero,arpon,,,,1291
-32,4,Activo,OJ8771,España,petrolero,,,,561857,958
-33,15,Actividad,OC4762,Finlandia,pesquero,arpon,,,,1639
-34,14,Agudo,XN4914,Peru,carga,,9431,108918,,978
-35,11,Adan y Eva,XP9141,Jamaica,pesquero,manos,,,,1612
-36,16,Firme,EX4705,Japon,petrolero,,,,577929,1526
-37,9,inflexible II,BJ4245,Tailandia,pesquero,manos,,,,706
-38,12,Agrega un,RH8308,Dinamarca,carga,,13906,108088,,497
-39,15,Sumador,YP3858,Nicaragua,pesquero,hilo,,,,1479
-40,16,Adelaide,AL8743,Filipinas,petrolero,,,,583420,824
-41,16,Adepto,KM2551,Republica Dominicana,petrolero,,,,619162,1568
-42,7,Admirable,EI5702,Italia,petrolero,,,,667150,701
-43,4,Almirante Devries,RJ2733,Estados Unidos,petrolero,,,,702509,408
-44,17,Almirante Farragut,YG2900,Sudafrica,carga,,12073,105347,,379
-45,12,Almirantazgo,TO8113,Austria,carga,,13432,138876,,1379
-46,18,Adonis,HE7029,India,petrolero,,,,550675,1499
-47,4,Habil,HB3228,Singapur,petrolero,,,,701908,374
-48,19,Adur,OF5956,Egipto,petrolero,,,,676189,365
-49,14,Avanzar,SG9128,Japon,carga,,14660,147528,,762
-50,16,Ventaja,GO7311,Australia,petrolero,,,,663652,340
-51,9,Advantagia,PM7495,Peru,pesquero,red,,,,247
-52,8,Aventuras,GS7205,España,pesquero,arrastre,,,,1279
-53,0,aventura Galera,PU5101,Peru,pesquero,red,,,,577
-54,2,Premio aventura,VP2429,Australia,pesquero,red,,,,1020
-55,11,Adversario,MO4968,España,pesquero,trampas,,,,223
-56,12,Consejo,BI5654,Peru,carga,,9568,138908,,750
-57,20,Premio consejos,YB8271,Siria,petrolero,,,,573681,934
-58,2,Asesor,VT2032,Austria,pesquero,hilo,,,,1494
-59,14,Eneas,MU6547,Sudafrica,carga,,6207,127705,,142
-60,8,Eolo,IW2489,Australia,pesquero,hilo,,,,1294
-61,2,Aetna,IG9597,Indonesia,pesquero,red,,,,1477
-62,3,Affleck,AU6167,Argentina,carga,,13371,143235,,397
-63,19,Refriega,JD8184,Mexico,petrolero,,,,711686,593
-64,4,Africa,RK2324,Republica Dominicana,petrolero,,,,576934,1190
-65,2,Africaine,LN6036,Republica Dominicana,pesquero,trampas,,,,615
-66,10,Afridi,PZ3477,Nicaragua,carga,,9266,110426,,274
-67,8,Afrikander,GM1638,Islas Malvinas,pesquero,arrastre,,,,177
-68,18,Agamenon,CI3218,Siria,petrolero,,,,741035,1058
-69,0,Aladdin,UH6836,Portugal,pesquero,trampas,,,,893
-70,18,Alamein,QJ6353,Peru,petrolero,,,,745484,1365
-71,3,Alarico,LW4637,Brasil,carga,,12639,89633,,554
-72,7,Alarma,SL2391,Sudafrica,petrolero,,,,704766,1465
-73,20,Alaunia II,PP3724,Portugal,petrolero,,,,561784,91
-74,13,albacora,QL4591,Siria,carga,,6249,89878,,1632
-75,1,Alban,BF7024,Finlandia,pesquero,red,,,,112
-76,20,Albanaise,QI7769,Japon,petrolero,,,,581730,117
-77,9,Albany,FM3163,Finlandia,pesquero,arpon,,,,1310
-78,14,Albatros,NX3376,Egipto,carga,,8659,85480,,1573
-79,12,Albemarle,XG7925,Filipinas,carga,,6600,126720,,764
-80,17,alberni,KY2131,Paraguay,carga,,12412,112531,,987
-81,5,Albert,MW6341,Tailandia,petrolero,,,,622559,900
-82,9,Alberta,FU8868,Panama,pesquero,trampas,,,,1054
-83,20,Albian,UH1378,Sudafrica,petrolero,,,,665881,901
-84,5,Albrighton,GT9752,España,petrolero,,,,686127,643
-85,16,Albuera,OB9598,Vietnam,petrolero,,,,727737,1456
-86,19,albury,VR7517,Islas Malvinas,petrolero,,,,563940,864
-87,7,Alcantara,GF5994,España,petrolero,,,,693830,1144
-88,4,Alcaston,HF1544,Jamaica,petrolero,,,,564770,280
-89,14,blackwall,AI2283,Reino Unido,carga,,12345,107560,,964
-90,5,Agua Negra,KC2936,Noruega,petrolero,,,,680080,496
-91,1,Madera negra,MN1612,Italia,pesquero,hilo,,,,1431
-92,20,Espada,OR9516,Singapur,petrolero,,,,741884,168
-93,12,BLAIRMORE,OE1789,Argentina,carga,,7559,89854,,1354
-94,21,Blake,WD8846,Noruega,carga,,14590,134746,,1064
-95,1,Blakeney,MZ9845,Italia,pesquero,arrastre,,,,1411
-96,5,Blanche,RV9799,Dinamarca,petrolero,,,,555857,722
-97,7,Blandford,IV2746,Argentina,petrolero,,,,713399,982
-98,4,Blankney,TJ7818,Portugal,petrolero,,,,622444,756
-99,15,Blaxton,OF1501,Noruega,pesquero,trampas,,,,1399
-100,19,Resplandor,BY4314,Suiza,petrolero,,,,699236,878
-101,10,Chaqueta de sport,AM9504,Paraguay,carga,,7301,127694,,193
-102,18,Blean,ZV9679,Australia,petrolero,,,,676493,1467
-103,11,Bleasdale,SV9482,Panama,pesquero,hilo,,,,1398
-104,9,blencathra,UL8619,India,pesquero,manos,,,,194
-105,7,Blenheim,LF8633,Suiza,petrolero,,,,717122,927
-106,14,Bendicion,PR9667,Noruega,carga,,9934,98312,,537
-107,18,Blickling,MZ2239,Egipto,petrolero,,,,625911,403
-108,15,Bligh,WI9449,Suiza,pesquero,red,,,,1174
-109,11,Rubia,XG4556,Nicaragua,pesquero,trampas,,,,988
-110,9,Sabueso,HW2014,Colombia,pesquero,arpon,,,,708
-111,12,Floracion,BZ3311,Noruega,carga,,9676,131822,,449
-112,1,Flor,BB5259,Brasil,pesquero,manos,,,,1457
-113,8,Campanilla,WC8293,Australia,pesquero,manos,,,,1533
-114,18,pechiazul,RY9242,Canada,petrolero,,,,585328,627
-115,7,Blyth,OM4230,Paraguay,petrolero,,,,725658,1519
-116,10,Boadicea,AL1557,Dinamarca,carga,,9250,144164,,1480
-117,1,bodenham,II3534,Noruega,pesquero,arrastre,,,,23
-118,11,Castillo bodiam,CG7403,Japon,pesquero,arpon,,,,31
-119,3,Bogam,WX5990,Argentina,carga,,6868,127102,,162
-120,0,Negrita,HE5247,Polonia,pesquero,manos,,,,1314
-121,3,Bolebroke,HH5023,Republica Dominicana,carga,,10055,118740,,1239
-122,2,Bolton Castle,FI2331,Austria,pesquero,arpon,,,,1448
-123,16,Bolton,YB3879,Austria,petrolero,,,,727713,10
-124,17,Bombardear,OY7209,Reino Unido,carga,,9586,139309,,665
-125,13,Castillo de Bombay,NK1201,Ecuador,carga,,12465,123427,,1236
-126,16,Bombay,MN4984,Japon,petrolero,,,,732143,1285
-127,11,Bumerang,PA1651,Islas Malvinas,pesquero,arrastre,,,,147
-128,9,Buenaventura,PJ8392,Republica Dominicana,pesquero,hilo,,,,560
-129,7,Bonavoila,UE6214,Ecuador,petrolero,,,,743949,19
-130,19,Bonetta,IJ4552,Mexico,petrolero,,,,713431,1077
-131,11,Bonita,EF2295,Canada,pesquero,manos,,,,1178
-132,8,Bonito,RA3983,Finlandia,pesquero,arpon,,,,1432
-133,11,Bonne Ciudadana,YC1851,Austria,pesquero,hilo,,,,787
-134,3,Bootle,XL6992,Costa Rica,carga,,6160,134692,,948
-135,0,Borraja,RC8468,Estados Unidos,pesquero,hilo,,,,122
-136,12,Frontera,XH5466,Australia,carga,,9006,86111,,1149
-137,17,Boreas,VH2584,Ecuador,carga,,11877,140426,,1257
-138,15,Boreham,CV4539,Islas Malvinas,pesquero,hilo,,,,858
-139,16,Taladrador,VB9537,Canada,petrolero,,,,710065,353
-140,21,Boscawen,OF5460,Chile,carga,,9548,97271,,1385
-141,18,Bossington,EB3227,Peru,petrolero,,,,738155,1042
-142,15,Boston,IH6707,Nicaragua,pesquero,arrastre,,,,1536
-143,9,Botha,DA9671,Suiza,pesquero,arrastre,,,,547
-144,9,Bottisham,NL7862,Nueva Zelanda,pesquero,arrastre,,,,991
-145,15,Bouclier,UJ2611,Islas Malvinas,pesquero,trampas,,,,1597
-146,7,Boulogne,PV7666,Austria,petrolero,,,,736909,969
-147,15,Boulston,HH5472,Republica Dominicana,pesquero,arpon,,,,1577
-148,15,Bravucon,KQ3854,Nicaragua,pesquero,manos,,,,67
-149,14,Abundante,ON7101,Argentina,carga,,14531,94189,,1056
-150,5,Generosidad,QC1164,España,petrolero,,,,700310,1272
-151,9,bourbonnaise,TW7915,Tailandia,pesquero,hilo,,,,293
-152,16,Bourdelais,EI5834,Polonia,petrolero,,,,639358,898
-153,5,Bowen,AI9121,Jamaica,petrolero,,,,746383,422
-154,1,Castillo de Bowes,YE6286,Argentina,pesquero,hilo,,,,1013
-155,5,bowmanville,PJ3020,Japon,petrolero,,,,687636,398
-156,2,Boxer,IX1197,Italia,pesquero,manos,,,,47
-157,11,Boyne,YB1434,Belgica,pesquero,trampas,,,,536
-158,5,Braak,LD3618,Republica Dominicana,petrolero,,,,580817,1217
-159,5,Braave,IF9396,Portugal,petrolero,,,,592012,440
-160,16,Bradfield,AY3986,Islas Malvinas,petrolero,,,,712881,1569
-161,0,Bradford,FJ6533,Sudafrica,pesquero,hilo,,,,879
-162,4,Trenza,SU8617,Belgica,petrolero,,,,723570,529
-163,0,Braithwaite,LW6201,Japon,pesquero,hilo,,,,801
-164,10,Brakel,VG7905,Tailandia,carga,,7642,87416,,1617
-165,3,Castillo bramber,SM2508,Colombia,carga,,10962,113194,,330
-166,17,Zarza,MY3367,Portugal,carga,,8438,103940,,997
-167,21,Bramham,GS9404,Filipinas,carga,,8142,118735,,1209
-168,17,Brampton,HE8199,Jamaica,carga,,6968,99037,,646
-169,5,Brandon,FA3127,Chile,petrolero,,,,585901,390
-170,21,Branlebas,DQ3759,India,carga,,7635,111941,,1125
-171,17,brantford,RP8314,Ecuador,carga,,9611,147312,,758
-172,15,Brantingham,MJ4934,Ecuador,pesquero,arrastre,,,,1443
-173,15,Valiente,YX2002,Islas Malvinas,pesquero,arpon,,,,283
-174,19,Bravo,EV7485,Qatar,petrolero,,,,654900,890
-175,18,Brayford,HI7513,Suiza,petrolero,,,,616262,1092
-176,18,Descarado,RO9221,Cuba,petrolero,,,,714373,604
-177,16,Brema,TR8211,Australia,petrolero,,,,619301,860
-178,0,brearley,FO3430,India,pesquero,arpon,,,,557
-179,5,Brecon,LR2069,Panama,petrolero,,,,652513,1326
-180,12,Breconshire,GJ5946,Noruega,carga,,13885,97450,,1546
-181,7,Breda,HB4367,Egipto,petrolero,,,,643258,7
-182,0,brenchley,VY5330,Australia,pesquero,arpon,,,,571
-183,13,Brereton,WF3051,Singapur,carga,,14648,90191,,133
-184,10,Brevdrageren,HI3831,Belgica,carga,,7602,132884,,514
-185,11,Brezo,UO8744,Paraguay,pesquero,arpon,,,,1250
-186,6,Bridgewater,DV6261,Belgica,pesquero,hilo,,,,206
-187,2,Castillo bridgnorth,TS8958,Indonesia,pesquero,arpon,,,,1466
-188,2,Bridlington,LN8777,Tailandia,pesquero,trampas,,,,715
-189,18,Bridport,HK6767,Sudafrica,petrolero,,,,745734,143
-190,3,Brigadier,HE2921,Dinamarca,carga,,14600,118924,,451
-191,12,brigandine,BN3951,Italia,carga,,14837,97866,,1516
-192,11,Bergantin,TG8958,España,pesquero,red,,,,848
-193,15,Brigham,RK9162,Argentina,pesquero,hilo,,,,1224
-194,7,Brighton,NQ5495,Panama,petrolero,,,,620057,1313
-195,13,Brillante,HF4402,Austria,carga,,6926,139300,,161
-196,6,Premio brillante,IT1233,Filipinas,pesquero,manos,,,,473
-197,14,Brinkley,FN4513,Qatar,carga,,8628,133839,,1593
-198,19,Brinton,OA5815,Islas Malvinas,petrolero,,,,700422,1488
-199,21,briseis,WC2925,Costa Rica,carga,,14876,143549,,1059
-200,8,Energico,CC4639,Polonia,pesquero,hilo,,,,1378
-201,7,Brissenden,UZ5981,Cuba,petrolero,,,,611090,585
-202,3,Bristol,DK4889,Portugal,carga,,14922,125857,,896
-203,18,Britania,DT6703,Finlandia,petrolero,,,,672988,221
-204,2,britomart,JR2308,Tailandia,pesquero,arpon,,,,1493
-205,17,britanico,YW8268,Cuba,carga,,11036,119351,,723
-206,20,Brixham,WK4832,Brasil,petrolero,,,,695017,87
-207,5,Broaderschap,NN8091,Jamaica,petrolero,,,,617653,1413
-208,10,Broadley,AV9914,Costa Rica,carga,,8282,87392,,184
-209,8,Sable,DC7834,Qatar,pesquero,red,,,,8
-210,13,broadwater,GS9663,Polonia,carga,,6640,88427,,1559
-211,18,Broadway,OH1392,Jamaica,petrolero,,,,696867,634
-212,8,Brock,NP8695,Filipinas,pesquero,manos,,,,1339
-213,20,Brocklesby,PV6712,Paraguay,petrolero,,,,574440,317
-214,4,brockville,ZV8179,Indonesia,petrolero,,,,607336,885
-215,9,Rompi,OV3558,Islas Malvinas,pesquero,red,,,,210
-216,10,brolga,KI7112,India,carga,,14606,97725,,1614
-217,5,Bronington,LV7419,Qatar,petrolero,,,,729334,388
-218,17,Penelope,DS0478,Chile,carga,,1342,122258,,679
-219,6,Premio Dover,KH8053,Belgica,pesquero,red,,,,1446
-220,10,Dovey,XB6912,Argentina,carga,,6477,149912,,748
-221,5,downham,CE1914,Corea,petrolero,,,,743915,1596
-222,16,Downley,RW4421,Suiza,petrolero,,,,587549,1026
-223,16,Continuar,UY2987,Islas Malvinas,petrolero,,,,640640,1007
-224,13,Premio dragon,EE2109,Nueva Zelanda,carga,,13002,147828,,272
-225,0,Libelula,RQ2918,Dinamarca,pesquero,manos,,,,1123
-226,7,Pato,ZC6249,Brasil,petrolero,,,,610601,400
-227,7,Terrible,SQ8557,Vietnam,petrolero,,,,730733,319
-228,8,Acorazado,GC3280,Islas Malvinas,pesquero,red,,,,460
-229,5,Premio Dreadnought,NT2280,Colombia,petrolero,,,,745054,1360
-230,12,Conductor,PZ1913,Nueva Zelanda,carga,,6099,122989,,1251
-231,21,Drochterland,NN2774,Tailandia,carga,,8383,99464,,456
-232,9,Drogheda,PB7290,Reino Unido,pesquero,manos,,,,835
-233,19,Dromedario,GE9618,Colombia,petrolero,,,,749602,641
-234,13,Dromio,PK9613,Paraguay,carga,,11211,115463,,1228
-235,10,Droxford,CB1716,Tailandia,carga,,6361,101829,,897
-236,10,Esclava,VI7863,Chile,carga,,6520,114011,,297
-237,15,druida,OO2266,Qatar,pesquero,hilo,,,,1382
-238,17,drumheller,VI9753,Nicaragua,carga,,14312,143280,,90
-239,21,drummondville,FE1567,Panama,carga,,9798,82537,,56
-240,14,Drury,DG5218,Filipinas,carga,,6737,113805,,814
-241,0,Driada,LI5894,Singapur,pesquero,arpon,,,,1504
-242,4,dubbo,QJ1463,Tailandia,petrolero,,,,630467,522
-243,10,Dubford,DY6365,Irlanda,carga,,12367,131356,,594
-244,21,Gulnare,OI4579,Egipto,carga,,13020,92264,,1359
-245,10,Gurkha,TQ5114,Finlandia,carga,,12062,133964,,279
-246,7,guysborough,ED5736,Chile,petrolero,,,,551307,698
-247,19,gympie,HP3120,Panama,petrolero,,,,706639,511
-248,6,gitano,YT2845,Mexico,pesquero,manos,,,,1404
-249,10,magnolia,ZP4420,Chile,carga,,7567,84204,,736
+bid,nid,nombre,patente,pais_origen,tipo,id_caiptan
+0,0,Abbotsham,ZX2922,India,pesquero,1070
+1,0,Abdiel,PM8536,Canada,pesquero,1186
+2,1,Abeille,VC7492,Singapur,pesquero,1483
+3,2,Abelardo,LS5992,Costa Rica,pesquero,1629
+4,3,Abelia,PJ5481,Argentina,carga,1235
+5,4,Abercrombie,LX6914,Qatar,petrolero,1472
+6,5,Aberdeen,EH9187,Qatar,petrolero,30
+7,6,Aberford,ST8633,Mexico,pesquero,1557
+8,2,Aberfoyle,EY2745,Japon,pesquero,465
+9,7,abergavenny,LA5643,Siria,petrolero,316
+10,8,Abigail,AU5998,Irlanda,pesquero,807
+11,9,Abingdon,ET5609,Nicaragua,pesquero,1315
+12,8,abondance,MO4425,Filipinas,pesquero,185
+13,5,aboukir,BY5212,Colombia,petrolero,675
+14,8,Abrahan,EG8528,Brasil,pesquero,318
+15,5,Abrams Oferta,QD4440,Estados Unidos,petrolero,1167
+16,2,Abundancia,VX5561,Estados Unidos,pesquero,636
+17,10,Abisinia,VT6220,Mexico,carga,488
+18,1,Acacia,XK7318,Argentina,pesquero,700
+19,5,Acanto,WW2485,Portugal,petrolero,380
+20,3,acasta,HV2199,Mexico,carga,1486
+21,1,As,ID7819,Panama,pesquero,1528
+22,11,Acertif,QA2495,Nueva Zelanda,pesquero,260
+23,12,achates,WF7217,Islas Malvinas,carga,441
+24,3,acheron,BN4195,Costa Rica,carga,64
+25,13,Achille,UW2735,Austria,carga,1521
+26,13,Aquiles,EF7582,Belgica,carga,491
+27,10,Aconito,OT5458,Mexico,carga,1622
+28,0,Bellota,YN4644,Islas Malvinas,pesquero,186
+29,14,Acteon,FS3778,Indonesia,carga,1105
+30,8,acteon,VW7522,Australia,pesquero,1093
+31,1,Calypso,VI4743,Canada,pesquero,1291
+32,4,Activo,OJ8771,España,petrolero,958
+33,15,Actividad,OC4762,Finlandia,pesquero,1639
+34,14,Agudo,XN4914,Peru,carga,978
+35,11,Adan y Eva,XP9141,Jamaica,pesquero,1612
+36,16,Firme,EX4705,Japon,petrolero,1526
+37,9,inflexible II,BJ4245,Tailandia,pesquero,706
+38,12,Agrega un,RH8308,Dinamarca,carga,497
+39,15,Sumador,YP3858,Nicaragua,pesquero,1479
+40,16,Adelaide,AL8743,Filipinas,petrolero,824
+41,16,Adepto,KM2551,Republica Dominicana,petrolero,1568
+42,7,Admirable,EI5702,Italia,petrolero,701
+43,4,Almirante Devries,RJ2733,Estados Unidos,petrolero,408
+44,17,Almirante Farragut,YG2900,Sudafrica,carga,379
+45,12,Almirantazgo,TO8113,Austria,carga,1379
+46,18,Adonis,HE7029,India,petrolero,1499
+47,4,Habil,HB3228,Singapur,petrolero,374
+48,19,Adur,OF5956,Egipto,petrolero,365
+49,14,Avanzar,SG9128,Japon,carga,762
+50,16,Ventaja,GO7311,Australia,petrolero,340
+51,9,Advantagia,PM7495,Peru,pesquero,247
+52,8,Aventuras,GS7205,España,pesquero,1279
+53,0,aventura Galera,PU5101,Peru,pesquero,577
+54,2,Premio aventura,VP2429,Australia,pesquero,1020
+55,11,Adversario,MO4968,España,pesquero,223
+56,12,Consejo,BI5654,Peru,carga,750
+57,20,Premio consejos,YB8271,Siria,petrolero,934
+58,2,Asesor,VT2032,Austria,pesquero,1494
+59,14,Eneas,MU6547,Sudafrica,carga,142
+60,8,Eolo,IW2489,Australia,pesquero,1294
+61,2,Aetna,IG9597,Indonesia,pesquero,1477
+62,3,Affleck,AU6167,Argentina,carga,397
+63,19,Refriega,JD8184,Mexico,petrolero,593
+64,4,Africa,RK2324,Republica Dominicana,petrolero,1190
+65,2,Africaine,LN6036,Republica Dominicana,pesquero,615
+66,10,Afridi,PZ3477,Nicaragua,carga,274
+67,8,Afrikander,GM1638,Islas Malvinas,pesquero,177
+68,18,Agamenon,CI3218,Siria,petrolero,1058
+69,0,Aladdin,UH6836,Portugal,pesquero,893
+70,18,Alamein,QJ6353,Peru,petrolero,1365
+71,3,Alarico,LW4637,Brasil,carga,554
+72,7,Alarma,SL2391,Sudafrica,petrolero,1465
+73,20,Alaunia II,PP3724,Portugal,petrolero,91
+74,13,albacora,QL4591,Siria,carga,1632
+75,1,Alban,BF7024,Finlandia,pesquero,112
+76,20,Albanaise,QI7769,Japon,petrolero,117
+77,9,Albany,FM3163,Finlandia,pesquero,1310
+78,14,Albatros,NX3376,Egipto,carga,1573
+79,12,Albemarle,XG7925,Filipinas,carga,764
+80,17,alberni,KY2131,Paraguay,carga,987
+81,5,Albert,MW6341,Tailandia,petrolero,900
+82,9,Alberta,FU8868,Panama,pesquero,1054
+83,20,Albian,UH1378,Sudafrica,petrolero,901
+84,5,Albrighton,GT9752,España,petrolero,643
+85,16,Albuera,OB9598,Vietnam,petrolero,1456
+86,19,albury,VR7517,Islas Malvinas,petrolero,864
+87,7,Alcantara,GF5994,España,petrolero,1144
+88,4,Alcaston,HF1544,Jamaica,petrolero,280
+89,14,blackwall,AI2283,Reino Unido,carga,964
+90,5,Agua Negra,KC2936,Noruega,petrolero,496
+91,1,Madera negra,MN1612,Italia,pesquero,1431
+92,20,Espada,OR9516,Singapur,petrolero,168
+93,12,BLAIRMORE,OE1789,Argentina,carga,1354
+94,21,Blake,WD8846,Noruega,carga,1064
+95,1,Blakeney,MZ9845,Italia,pesquero,1411
+96,5,Blanche,RV9799,Dinamarca,petrolero,722
+97,7,Blandford,IV2746,Argentina,petrolero,982
+98,4,Blankney,TJ7818,Portugal,petrolero,756
+99,15,Blaxton,OF1501,Noruega,pesquero,1399
+100,19,Resplandor,BY4314,Suiza,petrolero,878
+101,10,Chaqueta de sport,AM9504,Paraguay,carga,193
+102,18,Blean,ZV9679,Australia,petrolero,1467
+103,11,Bleasdale,SV9482,Panama,pesquero,1398
+104,9,blencathra,UL8619,India,pesquero,194
+105,7,Blenheim,LF8633,Suiza,petrolero,927
+106,14,Bendicion,PR9667,Noruega,carga,537
+107,18,Blickling,MZ2239,Egipto,petrolero,403
+108,15,Bligh,WI9449,Suiza,pesquero,1174
+109,11,Rubia,XG4556,Nicaragua,pesquero,988
+110,9,Sabueso,HW2014,Colombia,pesquero,708
+111,12,Floracion,BZ3311,Noruega,carga,449
+112,1,Flor,BB5259,Brasil,pesquero,1457
+113,8,Campanilla,WC8293,Australia,pesquero,1533
+114,18,pechiazul,RY9242,Canada,petrolero,627
+115,7,Blyth,OM4230,Paraguay,petrolero,1519
+116,10,Boadicea,AL1557,Dinamarca,carga,1480
+117,1,bodenham,II3534,Noruega,pesquero,23
+118,11,Castillo bodiam,CG7403,Japon,pesquero,31
+119,3,Bogam,WX5990,Argentina,carga,162
+120,0,Negrita,HE5247,Polonia,pesquero,1314
+121,3,Bolebroke,HH5023,Republica Dominicana,carga,1239
+122,2,Bolton Castle,FI2331,Austria,pesquero,1448
+123,16,Bolton,YB3879,Austria,petrolero,10
+124,17,Bombardear,OY7209,Reino Unido,carga,665
+125,13,Castillo de Bombay,NK1201,Ecuador,carga,1236
+126,16,Bombay,MN4984,Japon,petrolero,1285
+127,11,Bumerang,PA1651,Islas Malvinas,pesquero,147
+128,9,Buenaventura,PJ8392,Republica Dominicana,pesquero,560
+129,7,Bonavoila,UE6214,Ecuador,petrolero,19
+130,19,Bonetta,IJ4552,Mexico,petrolero,1077
+131,11,Bonita,EF2295,Canada,pesquero,1178
+132,8,Bonito,RA3983,Finlandia,pesquero,1432
+133,11,Bonne Ciudadana,YC1851,Austria,pesquero,787
+134,3,Bootle,XL6992,Costa Rica,carga,948
+135,0,Borraja,RC8468,Estados Unidos,pesquero,122
+136,12,Frontera,XH5466,Australia,carga,1149
+137,17,Boreas,VH2584,Ecuador,carga,1257
+138,15,Boreham,CV4539,Islas Malvinas,pesquero,858
+139,16,Taladrador,VB9537,Canada,petrolero,353
+140,21,Boscawen,OF5460,Chile,carga,1385
+141,18,Bossington,EB3227,Peru,petrolero,1042
+142,15,Boston,IH6707,Nicaragua,pesquero,1536
+143,9,Botha,DA9671,Suiza,pesquero,547
+144,9,Bottisham,NL7862,Nueva Zelanda,pesquero,991
+145,15,Bouclier,UJ2611,Islas Malvinas,pesquero,1597
+146,7,Boulogne,PV7666,Austria,petrolero,969
+147,15,Boulston,HH5472,Republica Dominicana,pesquero,1577
+148,15,Bravucon,KQ3854,Nicaragua,pesquero,67
+149,14,Abundante,ON7101,Argentina,carga,1056
+150,5,Generosidad,QC1164,España,petrolero,1272
+151,9,bourbonnaise,TW7915,Tailandia,pesquero,293
+152,16,Bourdelais,EI5834,Polonia,petrolero,898
+153,5,Bowen,AI9121,Jamaica,petrolero,422
+154,1,Castillo de Bowes,YE6286,Argentina,pesquero,1013
+155,5,bowmanville,PJ3020,Japon,petrolero,398
+156,2,Boxer,IX1197,Italia,pesquero,47
+157,11,Boyne,YB1434,Belgica,pesquero,536
+158,5,Braak,LD3618,Republica Dominicana,petrolero,1217
+159,5,Braave,IF9396,Portugal,petrolero,440
+160,16,Bradfield,AY3986,Islas Malvinas,petrolero,1569
+161,0,Bradford,FJ6533,Sudafrica,pesquero,879
+162,4,Trenza,SU8617,Belgica,petrolero,529
+163,0,Braithwaite,LW6201,Japon,pesquero,801
+164,10,Brakel,VG7905,Tailandia,carga,1617
+165,3,Castillo bramber,SM2508,Colombia,carga,330
+166,17,Zarza,MY3367,Portugal,carga,997
+167,21,Bramham,GS9404,Filipinas,carga,1209
+168,17,Brampton,HE8199,Jamaica,carga,646
+169,5,Brandon,FA3127,Chile,petrolero,390
+170,21,Branlebas,DQ3759,India,carga,1125
+171,17,brantford,RP8314,Ecuador,carga,758
+172,15,Brantingham,MJ4934,Ecuador,pesquero,1443
+173,15,Valiente,YX2002,Islas Malvinas,pesquero,283
+174,19,Bravo,EV7485,Qatar,petrolero,890
+175,18,Brayford,HI7513,Suiza,petrolero,1092
+176,18,Descarado,RO9221,Cuba,petrolero,604
+177,16,Brema,TR8211,Australia,petrolero,860
+178,0,brearley,FO3430,India,pesquero,557
+179,5,Brecon,LR2069,Panama,petrolero,1326
+180,12,Breconshire,GJ5946,Noruega,carga,1546
+181,7,Breda,HB4367,Egipto,petrolero,7
+182,0,brenchley,VY5330,Australia,pesquero,571
+183,13,Brereton,WF3051,Singapur,carga,133
+184,10,Brevdrageren,HI3831,Belgica,carga,514
+185,11,Brezo,UO8744,Paraguay,pesquero,1250
+186,6,Bridgewater,DV6261,Belgica,pesquero,206
+187,2,Castillo bridgnorth,TS8958,Indonesia,pesquero,1466
+188,2,Bridlington,LN8777,Tailandia,pesquero,715
+189,18,Bridport,HK6767,Sudafrica,petrolero,143
+190,3,Brigadier,HE2921,Dinamarca,carga,451
+191,12,brigandine,BN3951,Italia,carga,1516
+192,11,Bergantin,TG8958,España,pesquero,848
+193,15,Brigham,RK9162,Argentina,pesquero,1224
+194,7,Brighton,NQ5495,Panama,petrolero,1313
+195,13,Brillante,HF4402,Austria,carga,161
+196,6,Premio brillante,IT1233,Filipinas,pesquero,473
+197,14,Brinkley,FN4513,Qatar,carga,1593
+198,19,Brinton,OA5815,Islas Malvinas,petrolero,1488
+199,21,briseis,WC2925,Costa Rica,carga,1059
+200,8,Energico,CC4639,Polonia,pesquero,1378
+201,7,Brissenden,UZ5981,Cuba,petrolero,585
+202,3,Bristol,DK4889,Portugal,carga,896
+203,18,Britania,DT6703,Finlandia,petrolero,221
+204,2,britomart,JR2308,Tailandia,pesquero,1493
+205,17,britanico,YW8268,Cuba,carga,723
+206,20,Brixham,WK4832,Brasil,petrolero,87
+207,5,Broaderschap,NN8091,Jamaica,petrolero,1413
+208,10,Broadley,AV9914,Costa Rica,carga,184
+209,8,Sable,DC7834,Qatar,pesquero,8
+210,13,broadwater,GS9663,Polonia,carga,1559
+211,18,Broadway,OH1392,Jamaica,petrolero,634
+212,8,Brock,NP8695,Filipinas,pesquero,1339
+213,20,Brocklesby,PV6712,Paraguay,petrolero,317
+214,4,brockville,ZV8179,Indonesia,petrolero,885
+215,9,Rompi,OV3558,Islas Malvinas,pesquero,210
+216,10,brolga,KI7112,India,carga,1614
+217,5,Bronington,LV7419,Qatar,petrolero,388
+218,17,Penelope,DS0478,Chile,carga,679
+219,6,Premio Dover,KH8053,Belgica,pesquero,1446
+220,10,Dovey,XB6912,Argentina,carga,748
+221,5,downham,CE1914,Corea,petrolero,1596
+222,16,Downley,RW4421,Suiza,petrolero,1026
+223,16,Continuar,UY2987,Islas Malvinas,petrolero,1007
+224,13,Premio dragon,EE2109,Nueva Zelanda,carga,272
+225,0,Libelula,RQ2918,Dinamarca,pesquero,1123
+226,7,Pato,ZC6249,Brasil,petrolero,400
+227,7,Terrible,SQ8557,Vietnam,petrolero,319
+228,8,Acorazado,GC3280,Islas Malvinas,pesquero,460
+229,5,Premio Dreadnought,NT2280,Colombia,petrolero,1360
+230,12,Conductor,PZ1913,Nueva Zelanda,carga,1251
+231,21,Drochterland,NN2774,Tailandia,carga,456
+232,9,Drogheda,PB7290,Reino Unido,pesquero,835
+233,19,Dromedario,GE9618,Colombia,petrolero,641
+234,13,Dromio,PK9613,Paraguay,carga,1228
+235,10,Droxford,CB1716,Tailandia,carga,897
+236,10,Esclava,VI7863,Chile,carga,297
+237,15,druida,OO2266,Qatar,pesquero,1382
+238,17,drumheller,VI9753,Nicaragua,carga,90
+239,21,drummondville,FE1567,Panama,carga,56
+240,14,Drury,DG5218,Filipinas,carga,814
+241,0,Driada,LI5894,Singapur,pesquero,1504
+242,4,dubbo,QJ1463,Tailandia,petrolero,522
+243,10,Dubford,DY6365,Irlanda,carga,594
+244,21,Gulnare,OI4579,Egipto,carga,1359
+245,10,Gurkha,TQ5114,Finlandia,carga,279
+246,7,guysborough,ED5736,Chile,petrolero,698
+247,19,gympie,HP3120,Panama,petrolero,511
+248,6,gitano,YT2845,Mexico,pesquero,1404
+249,10,magnolia,ZP4420,Chile,carga,736
