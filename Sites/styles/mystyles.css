@@ -4,6 +4,7 @@ Es mucho más fácil implementar una plantilla de Bootstrap que cambiar estas co
 input {
     width: 10%;
     height: 20px;
+    float: left;
 }
 
 input[type=text] {
@@ -28,9 +29,9 @@ button {
 
 h1 {
     color: rgb(0, 66, 128);
+    text-align: center;
 }
 
-h1,
 h2,
 h3,
 h4 {
