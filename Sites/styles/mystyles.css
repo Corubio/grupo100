@@ -1,6 +1,10 @@
 /* Este archivo no es necesario. Solo es para cambiar las propiedades de los objetos HTML
 Es mucho más fácil implementar una plantilla de Bootstrap que cambiar estas cosas a mano */
 
+img {
+    float: center;
+}
+
 input {
     width: 10%;
     height: 20px;
