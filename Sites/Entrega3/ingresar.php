@@ -7,7 +7,7 @@
   <a href="registrar.php">Crea un usuario</a>
   <br>
   <br>
-  <form action="/~grupo100/Entrega3/acciones/validar.php" method="post">
+  <form action="/acciones/validar.php" method="post">
   <input id="usuario" type="text" name="usuario" data-constraints="@Required">
   <label for="usuario">Usuario</label>
   <div class="col-md-11">
