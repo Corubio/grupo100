@@ -10,7 +10,6 @@
   session_start();
   $_SESSION['nombre'] = $usuario;
   ?>
-
 <?php
 foreach ($log as $intento) {
   if ($intento[0] == '1') {
