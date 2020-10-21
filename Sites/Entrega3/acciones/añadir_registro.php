@@ -30,7 +30,7 @@ foreach ($log as $intento) {
     header('Location: http://codd.ing.puc.cl/~grupo100/Entrega3/registrar_conerror.php');
   } else {
     $usuario_servidor2 = 'grupo100';
-    $contraseña_servidor2 = 'grupo100';
+    $contraseña_servidor2 = 'abcabcab1';
     $base_servidor2 = 'grupo100e3';
 
     $con = pg_connect("host=localhost dbname=$base_servidor2 user=$usuario_servidor2 password=$contraseña_servidor2")
