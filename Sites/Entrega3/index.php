@@ -3,7 +3,7 @@
   <body>
   <img src='templates/animated.gif'/>
   <br>
-  <h2 data-wow-delay=".1s">Booking UC</h2>
-  <a href="login.php">Iniciar sesión</a>
+  <h2 data-wow-delay=".1s">Puertos y Navieras</h2>
+  <a href="ingresar.php">Iniciar sesión</a>
   </body>
 </html>
