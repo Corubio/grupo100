@@ -1,4 +1,3 @@
-<?php include('templates/error.png');   ?>
 <!DOCTYPE html>
 <html class="wide wow-animation" lang="en">
   <body>

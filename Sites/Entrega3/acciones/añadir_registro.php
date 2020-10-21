@@ -1,4 +1,3 @@
-<body>
 <?php
   #Llama a conexión, crea el objeto PDO y obtiene la variable $db
   require("conectar.php");
@@ -20,12 +19,11 @@
   session_start();
   $_SESSION['nombre'] = $nombre;
   ?>
-
 <?php
-foreach ($log2 as $intento) {
+  foreach ($log2 as $intento) {
     $uid = $intento[0] + 1;
-} 
-foreach ($log as $intento) {
+  } 
+  foreach ($log as $intento) {
   if ($intento[0] == '1') {
     header('Location: http://codd.ing.puc.cl/~grupo100/Entrega3/registrar_conerror.php');
   } else {
