@@ -1,5 +1,6 @@
-<body>
+<?php session_start(); ?>
 
+<body>
 <?php
   require("conectar.php");
 	  $usuario = $_POST["usuario"];
@@ -9,10 +10,6 @@
 	  $result = $db -> prepare($query);
 	  $result -> execute();
     $log = $result -> fetchAll();
-  ?>
-
-<?php
-  session_start();
   $_SESSION['nombre'] = $usuario;
   ?>
 
