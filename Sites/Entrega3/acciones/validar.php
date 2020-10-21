@@ -1,4 +1,3 @@
-<body>
 <?php
   require("conectar.php");
 	  $usuario = $_POST["usuario"];
