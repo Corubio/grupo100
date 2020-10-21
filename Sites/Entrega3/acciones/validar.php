@@ -9,6 +9,9 @@
 	  $result = $db -> prepare($query);
 	  $result -> execute();
     $log = $result -> fetchAll();
+  ?>
+
+<?php
   session_start();
   $_SESSION['nombre'] = $usuario;
   ?>
