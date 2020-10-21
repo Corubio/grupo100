@@ -7,15 +7,15 @@
     $sexo = $_POST["sexo"];
     $pasaporte = $_POST["pasaporte"];
     $nacionalidad = $_POST["nacionalidad"];
-	$contraseña = $_POST["contraseña"];
+	  $contraseña = $_POST["contraseña"];
 
-     $query = "SELECT count(*) FROM usuarios WHERE nombre = '$nombre';";
-     $query2 = "SELECT MAX(uid) FROM usuarios";
-	$result = $db -> prepare($query);
-	$result -> execute();
+    $query = "SELECT count(*) FROM usuarios WHERE nombre = '$nombre';";
+    $query2 = "SELECT MAX(uid) FROM usuarios";
+	  $result = $db -> prepare($query);
+	  $result -> execute();
     $log = $result -> fetchAll();
     $result2 = $db2 -> prepare($query);
-	$result2 -> execute();
+	  $result2 -> execute();
     $log2 = $result2 -> fetchAll();
   session_start();
   $_SESSION['nombre'] = $nombre;

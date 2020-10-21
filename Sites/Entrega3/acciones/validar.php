@@ -2,13 +2,13 @@
 <?php
   #Llama a conexión, crea el objeto PDO y obtiene la variable $db
   require("conectar.php");
-	$usuario = $_POST["usuario"];
-	$contraseña = $_POST["contraseña"];
+	  $usuario = $_POST["usuario"];
+	  $contraseña = $_POST["contraseña"];
 
- 	$query = "SELECT count(*) FROM usuarios WHERE nombre='$usuario' AND contraseña='$contraseña';";
-	$result = $db -> prepare($query);
-	$result -> execute();
-	$log = $result -> fetchAll();
+ 	  $query = "SELECT count(*) FROM usuarios WHERE nombre='$usuario' AND contraseña='$contraseña';";
+	  $result = $db -> prepare($query);
+	  $result -> execute();
+	  $log = $result -> fetchAll();
   session_start();
   $_SESSION['nombre'] = $nombre;
   ?>
