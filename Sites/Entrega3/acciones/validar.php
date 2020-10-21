@@ -10,7 +10,7 @@
 	  $result = $db -> prepare($query);
 	  $result -> execute();
     $log = $result -> fetchAll();
-  #session_start();
+  session_start();
   $_SESSION['nombre'] = $nombre;
   ?>
 

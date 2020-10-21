@@ -1,7 +1,8 @@
 <?php include('templates/error.png');   ?>
 <!DOCTYPE html>
 <html class="wide wow-animation" lang="en">
-  <body>    
+  <body>
+  <section>    
   <h3>Iniciar Sesion</h3>
   <br>
   <img src='templates/error.png'/>
@@ -21,5 +22,6 @@
   <div class="col-md-11">
   <input type="submit" value="Ingresar">
   </div>
+  </section>
   </body>
 </html>

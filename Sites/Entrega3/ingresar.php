@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html class="wide wow-animation" lang="en">
-  <body>    
+  <body>
+  <section>    
   <h3>Iniciar Sesion</h3>
   <br>
   <a href="registrar.php">Crea un usuario</a>
@@ -18,5 +19,6 @@
   <div class="col-md-11">
   <input type="submit" value="Ingresar">
   </div>
+  </section>
   </body>
 </html>

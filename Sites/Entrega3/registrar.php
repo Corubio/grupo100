@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html class="wide wow-animation" lang="en">
   <body>
+  <section>
   <h2>Crea tu usuario</h2>
   <br>
   <form action="acciones/añadir_registro.php" method="post">
@@ -36,5 +37,6 @@
   <br>
   <input type="submit" value="Ingresar">
   </div>
+  </section>
   </body>
 </html>

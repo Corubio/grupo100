@@ -2,6 +2,7 @@
 <!DOCTYPE html>
 <html class="wide wow-animation" lang="en">
   <body>
+  <section>
   <h2>Crea tu usuario</h2>
   <br>
   <img src='templates/error.png'/>
@@ -39,5 +40,6 @@
   <br>
   <input type="submit" value="Ingresar">
   </div>
+  </section>
   </body>
 </html>
