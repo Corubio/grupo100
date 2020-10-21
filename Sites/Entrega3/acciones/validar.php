@@ -1,7 +1,6 @@
 <body>
 
 <?php
-  #Llama a conexión, crea el objeto PDO y obtiene la variable $db
   require("conectar.php");
 	  $usuario = $_POST["usuario"];
 	  $contraseña = $_POST["contraseña"];
@@ -11,7 +10,7 @@
 	  $result -> execute();
     $log = $result -> fetchAll();
   session_start();
-  $_SESSION['nombre'] = $nombre;
+  $_SESSION['nombre'] = $usuario;
   ?>
 
 <?php
