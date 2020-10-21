@@ -18,7 +18,7 @@ foreach ($log as $intento) {
   if ($intento[0] == '1') {
     header('Location:');
   } else {
-    header('Location: http://codd.ing.puc.cl/~grupo100/Entrega3/login_conerror.php');
+    header('Location: http://codd.ing.puc.cl/~grupo100/Entrega3/ingresar_conerror.php');
   }
 }
   ?>
