@@ -4,7 +4,7 @@
   <section>
   <h2>Crea tu usuario</h2>
   <br>
-  <form action="acciones/añadir_registro.php" method="post">
+  <form action="/~grupo100/Entrega3/acciones/añadir_registro.php" method="post">
   <input id="usuario" type="text" name="usuario" data-constraints="@Required">
   <label for="usuario">Usuario</label>
   </div>
