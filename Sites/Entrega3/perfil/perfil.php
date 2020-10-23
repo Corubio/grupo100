@@ -2,7 +2,6 @@
   session_start();
   $usuario = $_SESSION['usuario'];
   ?>
-<!--busca los datos del usuario-->
 <?php
   require("../acciones/conectar.php");
     $query = "SELECT * FROM usuarios WHERE nombre='$usuario';";
@@ -10,7 +9,6 @@
 	  $result -> execute();
     $log = $result -> fetchAll();
   ?>
-<!--revisa si es capitan-->
 <?php
   require("../acciones/conectar.php");
     $query2 = "SELECT count(*) FROM usuarios JOIN personal ON usuarios.nombre=personal.nombre RIGHT JOIN buques ON personal.pid = buques.id_capitan RIGHT JOIN navieras ON buques.nid = navieras.nid WHERE usuarios.nombre='$usuario';";
@@ -18,7 +16,6 @@
     $result2 -> execute();
     $log2 = $result2 -> fetchAll();
   ?>
-<!--envia los datos-->
 <?php
   foreach ($log2 as $capitan) {
     if ($capitan[0] == '1') {
