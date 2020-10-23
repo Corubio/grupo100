@@ -1,5 +1,4 @@
 <?php
-  #Llama a conexión, crea el objeto PDO y obtiene la variable $db
   require("conectar.php");
     $usuario = $_POST["usuario"];
     $edad = $_POST["edad"];
