@@ -9,6 +9,7 @@
   $patente = $_SESSION['patente'];
   $tipo = $_SESSION['tipo'];
   $naviera = $_SESSION['naviera'];
+  $proximo = $_SESSION['proximo'];
   echo "Nombre: ".$usuario."";
   echo "<br>";
   echo "Edad: ".$edad."";
@@ -26,6 +27,8 @@
   echo "Tipo: ".$tipo."";
   echo "<br>";
   echo "Naviera: ".$naviera."";
+  echo "<br>";
+  echo "Proximo Itinerario: ".$proximo."";
   echo "<br>";
   ?>
 <!DOCTYPE html>

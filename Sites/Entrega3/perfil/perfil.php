@@ -20,7 +20,7 @@
   foreach ($log2 as $capitan) {
   if ($capitan[0] == '1') {
     require("../acciones/conectar.php");
-      $query3 = "SELECT buques.nombre, buques.patente, buques.tipo, navieras.nombre FROM usuarios JOIN personal ON usuarios.nombre=personal.nombre RIGHT JOIN buques ON personal.pid = buques.id_capitan RIGHT JOIN navieras ON buques.nid = navieras.nid WHERE usuarios.nombre='$usuario';";
+      $query3 = "SELECT buques.nombre, buques.patente, buques.tipo, navieras.nombre AS siguiente FROM usuarios JOIN personal ON usuarios.nombre=personal.nombre JOIN buques ON personal.pid = buques.id_capitan JOIN navieras ON buques.nid = navieras.nid WHERE usuarios.nombre='$usuario';";
       $result3 = $db -> prepare($query3);
       $result3 -> execute();
       $log3 = $result3 -> fetchAll();
@@ -30,11 +30,21 @@
       $_SESSION['tipo'] = $datos[2];
       $_SESSION['naviera'] = $datos[3];
     }
+      $query3 = "SELECT (proximo_itinerario.fecha, proximo_itinerario.siguiente) AS siguiente FROM usuarios JOIN personal ON usuarios.nombre=personal.nombre JOIN buques ON personal.pid = buques.id_capitan JOIN navieras ON buques.nid = navieras.nid JOIN proximo_itinerario ON proximo_itinerario.bid = buques.bid WHERE usuarios.nombre='$usuario';";
+      $result3 = $db -> prepare($query3);
+      $result3 -> execute();
+      $log3 = $result3 -> fetchAll();
+    if ($log3[0]) {
+      $_SESSION['proximo'] = $log3[0][0];
+    } else {
+      $_SESSION['proximo'] = 'no hay proximo itinerario';
+    }
   } else {
     $_SESSION['buque'] = 'Usted no es capitán';
     $_SESSION['patente'] = 'Usted no es capitán';
     $_SESSION['tipo'] = 'Usted no es capitán';
     $_SESSION['naviera'] = 'Usted no es capitán';
+    $_SESSION['proximo'] = 'Usted no es capitán';
   }
 }
   foreach ($log as $datos) {
