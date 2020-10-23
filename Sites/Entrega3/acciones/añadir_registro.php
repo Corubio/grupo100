@@ -37,7 +37,7 @@
     pg_query("BEGIN") or die("Could not start transaction\n");
     $res1 = pg_query("INSERT INTO usuarios VALUES('$uid', '$nombre', $edad, '$sexo', '$pasaporte', '$nacionalidad', '$contraseña');");
     pg_query("COMMIT");
-    header('Location:');
+    header('Location: http://codd.ing.puc.cl/~grupo100/Entrega3/sesion.php');
   }
 }
   ?>

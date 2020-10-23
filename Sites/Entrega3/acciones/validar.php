@@ -8,12 +8,12 @@
 	  $result -> execute();
     $log = $result -> fetchAll();
   session_start();
-  $_SESSION['nombre'] = $usuario;
+  $_SESSION['usuario'] = $usuario;
   ?>
 <?php
 foreach ($log as $intento) {
   if ($intento[0] == '1') {
-    header('Location:');
+    header('Location: http://codd.ing.puc.cl/~grupo100/Entrega3/sesion.php');
   } else {
     header('Location: http://codd.ing.puc.cl/~grupo100/Entrega3/ingresar_conerror.php');
   }
