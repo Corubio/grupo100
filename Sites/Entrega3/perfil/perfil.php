@@ -20,15 +20,15 @@
   foreach ($log2 as $capitan) {
   if ($capitan[0] == '1') {
     require("../acciones/conectar.php");
-      $query3 = "SELECT (buques.nombre, buques.patente, buques.tipo, navieras.nombre) FROM usuarios JOIN personal ON usuarios.nombre=personal.nombre RIGHT JOIN buques ON personal.pid = buques.id_capitan RIGHT JOIN navieras ON buques.nid = navieras.nid WHERE usuarios.nombre='$usuario';";
+      $query3 = "SELECT buques.nombre, buques.patente, buques.tipo, navieras.nombre FROM usuarios JOIN personal ON usuarios.nombre=personal.nombre RIGHT JOIN buques ON personal.pid = buques.id_capitan RIGHT JOIN navieras ON buques.nid = navieras.nid WHERE usuarios.nombre='$usuario';";
       $result3 = $db -> prepare($query3);
       $result3 -> execute();
       $log3 = $result3 -> fetchAll();
     foreach ($log3 as $datos) {
-      $_SESSION['buque'] = $datos[0]['buques.nombre'];
-      $_SESSION['patente'] = $datos[0]['buques.patente'];
-      $_SESSION['tipo'] = $datos[0]['buques.tipo'];
-      $_SESSION['naviera'] = $datos[0]['navieras.nombre'];
+      $_SESSION['buque'] = $datos[0];
+      $_SESSION['patente'] = $datos[1];
+      $_SESSION['tipo'] = $datos[2];
+      $_SESSION['naviera'] = $datos[3];
     }
   } else {
     $_SESSION['buque'] = 'Usted no es capitán';
