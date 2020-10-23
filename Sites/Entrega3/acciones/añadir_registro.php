@@ -1,14 +1,14 @@
 <?php
   #Llama a conexión, crea el objeto PDO y obtiene la variable $db
   require("conectar.php");
-    $nombre = $_POST["usuario"];
+    $usuario = $_POST["usuario"];
     $edad = $_POST["edad"];
     $sexo = $_POST["sexo"];
     $pasaporte = $_POST["pasaporte"];
     $nacionalidad = $_POST["nacionalidad"];
 	  $contraseña = $_POST["contraseña"];
 
-    $query = "SELECT count(*) FROM usuarios WHERE nombre = '$nombre';";
+    $query = "SELECT count(*) FROM usuarios WHERE nombre = '$usuario';";
     $query2 = "SELECT MAX(uid) FROM usuarios";
 	  $result = $db -> prepare($query);
 	  $result -> execute();
@@ -17,7 +17,7 @@
 	  $result2 -> execute();
     $log2 = $result2 -> fetchAll();
   session_start();
-  $_SESSION['nombre'] = $nombre;
+  $_SESSION['usuario'] = $usuario;
   ?>
 <?php
   foreach ($log2 as $intento) {
