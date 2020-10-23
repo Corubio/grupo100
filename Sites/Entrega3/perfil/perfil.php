@@ -30,7 +30,7 @@
       $_SESSION['tipo'] = $datos[2];
       $_SESSION['naviera'] = $datos[3];
     }
-      $query3 = "SELECT (proximo_itinerario.fecha, proximo_itinerario.siguiente) AS siguiente FROM usuarios JOIN personal ON usuarios.nombre=personal.nombre JOIN buques ON personal.pid = buques.id_capitan JOIN navieras ON buques.nid = navieras.nid JOIN proximo_itinerario ON proximo_itinerario.bid = buques.bid WHERE usuarios.nombre='$usuario';";
+      $query3 = "SELECT (proximo_itinerario.fecha, proximo_itinerario.siguiente) AS siguiente FROM usuarios JOIN personal ON usuarios.nombre=personal.nombre JOIN buques ON personal.pid = buques.id_capitan JOIN navieras ON buques.nid = navieras.nid JOIN proximo_itinerario ON proximo_itinerario.bid = buques.bid WHERE usuarios.nombre='$usuario' ORDER BY siguiente DESC;";
       $result3 = $db -> prepare($query3);
       $result3 -> execute();
       $log3 = $result3 -> fetchAll();
