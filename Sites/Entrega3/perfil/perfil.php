@@ -25,10 +25,10 @@
       $result3 -> execute();
       $log3 = $result3 -> fetchAll();
     foreach ($log3 as $datos) {
-      $_SESSION['buque'] = $datos[0];
-      $_SESSION['patente'] = $datos[1];
-      $_SESSION['tipo'] = $datos[2];
-      $_SESSION['naviera'] = $datos[3];
+      $_SESSION['buque'] = $datos[0][0];
+      $_SESSION['patente'] = $datos[0][1];
+      $_SESSION['tipo'] = $datos[0][2];
+      $_SESSION['naviera'] = $datos[0][3];
     }
   } else {
     $_SESSION['buque'] = 'Usted no es capitán';
