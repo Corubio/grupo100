@@ -12,7 +12,7 @@
 <?php
   require("../acciones/conectar.php");
     $query2 = "SELECT count(*) FROM usuarios JOIN personal ON usuarios.nombre=personal.nombre RIGHT JOIN buques ON personal.pid = buques.id_capitan RIGHT JOIN navieras ON buques.nid = navieras.nid WHERE usuarios.nombre='$usuario';";
-    $result2 = $db -> prepare($query);
+    $result2 = $db -> prepare($query2);
     $result2 -> execute();
     $log2 = $result2 -> fetchAll();
   ?>
