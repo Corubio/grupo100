@@ -13,7 +13,7 @@
 	  $result = $db -> prepare($query);
 	  $result -> execute();
     $log = $result -> fetchAll();
-    $result2 = $db2 -> prepare($query);
+    $result2 = $db -> prepare($query2);
 	  $result2 -> execute();
     $log2 = $result2 -> fetchAll();
   session_start();
