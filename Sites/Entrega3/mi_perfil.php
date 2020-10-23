@@ -5,11 +5,16 @@
   $sexo = $_SESSION['sexo'];
   $pasaporte = $_SESSION['pasaporte'];
   $nacionalidad = $_SESSION['nacionalidad'];
-  echo "Nombre: ".$usuario."\n";
-  echo "Edad: ".$edad."\n";
-  echo "Sexo: ".$sexo."\n";
-  echo "Pasaporte: ".$pasaporte."\n";
-  echo "Nacionalidad: ".$nacionalidad."\n";
+  echo "Nombre: ".$usuario."";
+  echo "<br>";
+  echo "Edad: ".$edad."";
+  echo "<br>";
+  echo "Sexo: ".$sexo."";
+  echo "<br>";
+  echo "Pasaporte: ".$pasaporte."";
+  echo "<br>";
+  echo "Nacionalidad: ".$nacionalidad."";
+  echo "<br>";
   ?>
 <!DOCTYPE html>
 <html class="wide wow-animation" lang="en">
