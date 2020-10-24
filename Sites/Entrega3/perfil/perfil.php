@@ -37,7 +37,19 @@
     if ($log3[0]) {
       $_SESSION['proximo'] = $log3[0][0];
     } else {
-      $_SESSION['proximo'] = 'no hay proximo itinerario';
+      $_SESSION['proximo'] = 'No hay proximo itinerario';
+    }
+      $query3 = "SELECT atraques.puerto FROM usuarios JOIN personal ON usuarios.nombre=personal.nombre JOIN buques ON personal.pid = buques.id_capitan JOIN navieras ON buques.nid = navieras.nid JOIN atraques ON atraques.bid = buques.bid WHERE usuarios.nombre='$usuario' ORDER BY atraques.salida ASC LIMIT 5;";
+      $result3 = $db -> prepare($query3);
+      $result3 -> execute();
+      $log3 = $result3 -> fetchAll();
+      $_SESSION['previos'] = '';
+    if ($log3[0]) {
+      foreach ($log3 as $puertos) {
+        $_SESSION['previos'] += "$puertos, ";
+      }
+    } else {
+      $_SESSION['previos'] = 'No hay atraques registrados';
     }
   } else {
     $_SESSION['buque'] = 'Usted no es capitán';
@@ -45,6 +57,7 @@
     $_SESSION['tipo'] = 'Usted no es capitán';
     $_SESSION['naviera'] = 'Usted no es capitán';
     $_SESSION['proximo'] = 'Usted no es capitán';
+    $_SESSION['previos'] = 'Usted no es capitán';
   }
 }
   foreach ($log as $datos) {
