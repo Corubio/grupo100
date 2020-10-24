@@ -37,6 +37,7 @@
 <html class="wide wow-animation" lang="en">
   <body>
   <br>
-  <a href="sesion.php">Volver</a> 
+  <li><a href="sesion.php">Volver</a></li>
+  <li><a href="contraseña.php">Cambiar contraseña</a></li>
   </body>
 </html>
