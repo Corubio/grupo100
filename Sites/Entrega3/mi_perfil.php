@@ -10,6 +10,7 @@
   $tipo = $_SESSION['tipo'];
   $naviera = $_SESSION['naviera'];
   $proximo = $_SESSION['proximo'];
+  $previos = $_SESSION['previos'];
   echo "Nombre: ".$usuario."";
   echo "<br>";
   echo "Edad: ".$edad."";
@@ -30,6 +31,7 @@
   echo "<br>";
   echo "Proximo Itinerario: ".$proximo."";
   echo "<br>";
+  echo "Ultimos puertos: ".$previos."";
   ?>
 <!DOCTYPE html>
 <html class="wide wow-animation" lang="en">
