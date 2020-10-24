@@ -17,6 +17,7 @@
     $log2 = $result2 -> fetchAll();
   ?>
 <?php
+##datos si es capitan o no##
   foreach ($log2 as $capitan) {
   if ($capitan[0] == '1') {
     require("../acciones/conectar.php");
@@ -60,6 +61,7 @@
     $_SESSION['previos'] = 'Usted no es capitán';
   }
 }
+##datos normales##
   foreach ($log as $datos) {
     $_SESSION['edad'] = $datos[2];
     $_SESSION['sexo'] = $datos[3];
