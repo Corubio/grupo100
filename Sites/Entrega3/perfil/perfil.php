@@ -46,7 +46,7 @@
       $_SESSION['previos'] = '';
     if ($log3[0]) {
       foreach ($log3 as $puertos) {
-        $_SESSION['previos'] += "$puertos, ";
+        $_SESSION['previos'] = "".$_SESSION['previos']."".$puertos.", ";
       }
     } else {
       $_SESSION['previos'] = 'No hay atraques registrados';
