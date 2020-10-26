@@ -11,8 +11,7 @@
 <?php
   foreach ($log as $naviera) {
     echo '<form action="/~grupo100/Entrega3/consultas/naviera_consultada.php" method="post>
-          <input id="naviera" name="naviera" value='.$naviera[0].'>
-          <input type="submit" value='.$naviera[0].'>
+          <input id="naviera" name="naviera" type="submit" value='.$naviera[0].'>
           </form>';
   }
   ?>
