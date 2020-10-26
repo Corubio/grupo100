@@ -7,11 +7,9 @@
     $result = $db -> prepare($query);
     $result -> execute();
     $log = $result -> fetchAll();
-  echo "nombre, tipo, patente";
+  echo "nombre, tipo, patente", "<br>";
   foreach ($log as $buque) {
-    foreach ($buque as $dato) {
-      echo "".$dato.", ";
-    }
+    echo "".$buque[0].", ".$buque[1].", ".$buque[2]."";
     echo "<br>";
   }
   echo '<br><a href="../sesion.php">Volver</a>';
