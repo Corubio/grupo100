@@ -10,7 +10,9 @@
   <form action="/~grupo100/Entrega3/perfil/perfil.php" method="post">
   <li><input type="submit" value="Mi perfil" ></li>
   </form>
-  <li><a href="/consultas/navieras_buques.php">Consultar por navieras y buques</a></li>
+  <form action="/~grupo100/Entrega3//consultas/navieras_buques.php" method="post">
+  <li><input type="submit" value="Consultar por navieras y buques" ></li>
+  </form>
   <li><a href="/consultas/puertos.php">Consultar por puertos</a></li>
   <li><a href="index.php">Cerrar Sesion</a></li>
   </body>
