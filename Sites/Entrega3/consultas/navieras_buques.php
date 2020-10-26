@@ -9,9 +9,8 @@
     $log = $result -> fetchAll();
   ?>
 <?php
-  $_SESSION['naviera_consulta'] = $_GET['nombre'];
   foreach ($log as $naviera) {
     echo '<li><a href = naviera_consultada.php>'.$naviera['nombre'].'</a></li>';
+    $_SESSION['naviera_consulta'] = $naviera['nombre'];
   }
-  $_SESSION['naviera_consulta'] = $_GET['nombre'];
   ?>
