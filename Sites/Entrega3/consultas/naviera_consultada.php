@@ -7,9 +7,8 @@
     $result = $db -> prepare($query);
     $result -> execute();
     $log = $result -> fetchAll();
-  echo "".$log."<br>";
-  foreach ($log as $buque) {
-    echo "".$buque."<br>";
+  foreach($log['data'] as $result) {
+    echo $result['type'], '<br>';
   }
   echo '<br><a href="../sesion.php">Volver</a>';
   ?>
