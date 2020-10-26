@@ -2,7 +2,7 @@
   session_start();
   ?>
 <?php
-  require("conectar.php");
+  require("../acciones/conectar.php");
     $query = "SELECT navieras.nombre FROM navieras;";
     $result = $db -> prepare($query);
     $result -> execute();
