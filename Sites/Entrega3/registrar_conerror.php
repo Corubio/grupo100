@@ -41,5 +41,7 @@
   </div>
   </form>
   </section>
+  <br>
+  <a href="ingresar.php">Volver</a>
   </body>
 </html>
