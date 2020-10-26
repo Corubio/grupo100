@@ -1,5 +1,5 @@
 <?php
-  $naviera = $_POST['naviera'];
+  $naviera = $_GET['naviera'];
   ?>
 <?php
   echo ''.$naviera.'';
