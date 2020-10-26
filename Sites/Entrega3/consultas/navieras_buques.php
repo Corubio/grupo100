@@ -9,9 +9,11 @@
     $log = $result -> fetchAll();
   ?>
 <?php
+  echo '<form action="/~grupo100/Entrega3/consultas/naviera_consultada.php" method="post>';
   foreach ($log as $naviera) {
-    echo '<form action="/~grupo100/Entrega3/consultas/naviera_consultada.php" method="post>
-          <input id="naviera" type="submit" value='.$naviera[0].'>
-          </form>';
+    echo '<input type="radio" id="'.$naviera[0].'" name="naviera" value="'.$naviera[0].'">
+          <label for="'.$naviera[0].'">'.$naviera[0].'</label><br>';
   }
+  echo '<input type="submit" value="Buscar">';
+  echo '</form>';
   ?>
