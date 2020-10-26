@@ -1,9 +1,6 @@
 <?php
-  session_start();
-  ?>
-<?php
   require("../acciones/conectar.php");
-    $query = "SELECT navieras.nombre, navieras.nid FROM navieras;";
+    $query = "SELECT DISTINCT navieras.nombre, navieras.nid, buques.tipo FROM navieras JOIN buques ON buques.nid = navieras.nid ORDER BY buques.tipo;";
     $result = $db -> prepare($query);
     $result -> execute();
     $log = $result -> fetchAll();

@@ -7,10 +7,10 @@
     $result = $db -> prepare($query);
     $result -> execute();
     $log = $result -> fetchAll();
-  echo "nombre, tipo, patente", "<br>";
+  echo "nombre, patente, tipo", "<br>";
   foreach ($log as $buque) {
-    echo "".$buque[0].", ".$buque[1].", ".$buque[2]."";
+    echo "".$buque[0].", ".$buque[2].", ".$buque[1]."";
     echo "<br>";
   }
-  echo '<br><a href="../sesion.php">Volver</a>';
+  echo '<br><a href="navieras_buques.php">Volver</a>';
   ?>
