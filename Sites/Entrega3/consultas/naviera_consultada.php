@@ -1,6 +1,6 @@
 <?php
   session_start();
-  $naviera = $_SESSION['naviera_consulta'];
+  $naviera = $_POST['naviera'];
   ?>
 <?php
   echo ''.$naviera.'';
