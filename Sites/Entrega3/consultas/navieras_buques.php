@@ -10,8 +10,7 @@
   ?>
 <?php
   foreach ($log as $naviera) {
-    echo '<li><a href = naviera_consultada.php>'.$naviera['nombre'].'</a></li>';
-    echo '<form action="/~grupo100/Entrega3/consulta/naviera_consultada.php" method="post>
+    echo '<form action="/~grupo100/Entrega3/consultas/naviera_consultada.php" method="post>
           <input id="naviera" value='.$naviera['nombre'].'>
           <input type="submit" value='.$naviera['nombre'].'>
           </form>';
