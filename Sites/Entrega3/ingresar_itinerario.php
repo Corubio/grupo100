@@ -12,13 +12,12 @@
   $proximo = $_SESSION['proximo'];
   $previos = $_SESSION['previos'];
   if ($buque != 'Usted no es capitán') {
-    echo "Nombre: ".$usuario."";
-    echo "<br>";
     echo "Buque: ".$buque."";
     echo "<br>";
     echo "Proximo Itinerario: ".$proximo."";
     echo "<br>";
     echo "Ultimos puertos: ".$previos."";
+    echo "<br>";
     echo "<br>";
     echo "Ingrese el nuevo itinerario:";
     echo "<br>";
