@@ -6,41 +6,39 @@
 
 <?php
   $id = $_GET["pid"];
-?>
-
-<form action="./consulta_permiso.php" method="get">
-  <?php echo '<input type="hidden" value="'.$id.'">'; ?>
+echo "
 <table>
-  <tr>
-  <label for="tipo">Eliga tipo de Instalacion</label>
-  <select name="tipo" id="tipo">
-    <option value="muelle">Muelle</option>
-    <option value="astillero">Astillero</option>
+<form action='./consulta_permiso.php?id=$id' method='post'>
+  <tr><td>
+  <label for='tipo'>Eliga tipo de Instalacion</label>
+  <select name='tipo' id='tipo'>
+    <option value='muelle'>Muelle</option>
+    <option value='astillero'>Astillero</option>
   </select>
-  </tr>
+  </td></tr>
 
-  <tr>
-  <label for="fecha_in">Fecha Ingreso</label>
-  <input type="date" id="fecha_in" name="fecha_in">
-  </tr>
+  <tr><td>
+  <label for='fecha_in'>Fecha Ingreso</label>
+  <input type='date' id='fecha_in' name='fecha_in'>
+  </td></tr>
 
-  <tr>
-  <label for="fecha_out">Fecha Salida</labe>
-  <input type="date" id="fecha_out" name="fecha_out">
-  </tr>
+  <tr><td>
+  <label for='fecha_out'>Fecha Salida</label>
+  <input type='date' id='fecha_out' name='fecha_out'>
+  </td></tr>
 
-  <tr>
-  <label for="patente">Ingrese patente del barco</label>
-  <input type="text" id="patente" name="patente">
-  </tr>
+  <tr><td>
+  <label for='patente'>Ingrese patente del barco</label>
+  <input type='text' id='patente' name='patente'>
+  </td></tr>
 
-  <tr>
-  <input type="reset" value="Reset">
-  <input type="submit" value="Realizar Solicitud">
-  </tr>
+  <tr><td>
+  <input type='reset' value='Reset'>
+  <input type='submit' value='Realizar Solicitud'>
+  </td></tr>
 </table>
-</form>
-
+</form> ";
+?>
 
 
 <br><a href="../puertos.php">Volver</a>
