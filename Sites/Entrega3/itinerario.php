@@ -38,5 +38,12 @@
         $_SESSION['error'] = 'Itinerario agregado con éxito!';
   }
   echo 'Itinerario agregado con éxito!';
+  echo "<br>";
+  echo "Fecha: ".$fecha."";
+  echo "<br>";
+  echo "Lugar de atraque: ".$lugar."";
+  echo "<br>";
+  echo "Buque: ".$buque."";
+  echo "<br>";
   echo '<br><a href="sesion.php">Volver</a>';
   ?>
