@@ -61,8 +61,8 @@
     $_SESSION['previos'] = 'Usted no es capitán';
   }
 }
-
-foreach ($log as $datos) {
+##datos normales##
+  foreach ($log as $datos) {
     $_SESSION['edad'] = $datos[2];
     $_SESSION['sexo'] = $datos[3];
     $_SESSION['pasaporte'] = $datos[4];
