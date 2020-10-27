@@ -37,5 +37,6 @@
         $log4 = $result4 -> fetchAll();
         $_SESSION['error'] = 'Itinerario agregado con éxito!';
   }
+  echo 'Itinerario agregado con éxito!';
   echo '<br><a href="sesion.php">Volver</a>';
   ?>
