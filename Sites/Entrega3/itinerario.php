@@ -4,7 +4,7 @@
   $buque = $_SESSION['buque']
   ?>
 <?php
-  require("/acciones/conectar.php");
+  require("acciones/conectar.php");
     $query = "SELECT * FROM usuarios WHERE nombre='$usuario';";
     $result = $db -> prepare($query);
 	$result -> execute();
@@ -13,7 +13,7 @@
     $lugar = $_POST["lugar"];
   ?>
 <?php
-  require("/acciones/conectar.php");
+  require("acciones/conectar.php");
     $query2 = "SELECT bid FROM buques WHERE nombre='$buque';";
     $result2 = $db -> prepare($query2);
 	$result2 -> execute();
@@ -21,7 +21,7 @@
     $bid = $log2[0][0];
   ?>
 <?php
-  require("/acciones/conectar.php");
+  require("acciones/conectar.php");
     $query3 = 'SELECT MAX(iid) FROM proximo_itinerario;';
     $result3 = $db -> prepare($query3);
 	$result3 -> execute();
@@ -30,7 +30,7 @@
   ?>
 <?php
   foreach ($log as $datos) {
-    require("/acciones/conectar.php");
+    require("acciones/conectar.php");
         $query4 = "INSERT INTO proximo_itinerario VALUES ('$iid', '$bid', '$lugar', '$fecha')";
         $result4 = $db -> prepare($query4);
         $result4 -> execute();
