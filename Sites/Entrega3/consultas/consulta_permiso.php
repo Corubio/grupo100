@@ -4,7 +4,7 @@
 
 <h3>Recibi:</h3>
 <?php
-$id = $_GET['id'];
+$id = $_POST['id'];
 $tipo = $_POST['tipo'];
 $fecha_in = $_POST['fecha_in'];
 $fecha_out = $_POST['fecha_out'];

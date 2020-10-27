@@ -5,11 +5,12 @@
 <h2>Permisos:</h2>
 
 <?php
-  $id = $_GET["pid"];
+  $id = $_POST["pid"];
 echo "
 <table>
-<form action='./consulta_permiso.php?id=$id' method='post'>
+<form action='./consulta_permiso.php' method='post'>
   <tr><td>
+  <input type='hidden' id='id' name='id' value='$id'>
   <label for='tipo'>Eliga tipo de Instalacion</label>
   <select name='tipo' id='tipo'>
     <option value='muelle'>Muelle</option>

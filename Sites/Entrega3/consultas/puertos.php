@@ -30,12 +30,14 @@
           <td>$p[1]</td>
           <td>$p[2]</td>
           <td>
-            <form action='./puertos_fecha.php?pid=$p[3]' method='get'>
+            <form action='./puertos_fecha.php' method='post'>
+              <input type='hidden' id='pid' name='pid' value='$p[3]'>
               <input type='submit' value='Buscar por fechas'>
             </form>
           </td>
           <td>
-            <form action='./pedir_permisos.php?pid=$p[3]' method='get'>
+            <form action='./pedir_permisos.php' method='post'>
+              <input type='hidden' id='pid' name='pid' value='$p[3]'>
               <input type='submit' value='Solicitar Permiso'>
             </form>
           </td>
