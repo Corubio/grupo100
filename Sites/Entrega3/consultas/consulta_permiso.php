@@ -19,5 +19,7 @@ echo "
 </table>
 ";
 ?>
+
+<br><a href="./puertos.php">Volver</a>
 </body>
 </html>

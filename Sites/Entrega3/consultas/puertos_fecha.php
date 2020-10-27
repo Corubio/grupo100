@@ -6,7 +6,7 @@
 
 
 
-<br><a href="../puertos.php">Volver</a>
+<br><a href="./puertos.php">Volver</a>
 
 </body>
 </html>
