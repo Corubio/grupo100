@@ -13,7 +13,7 @@
   <form action="/~grupo100/Entrega3/consultas/navieras_buques.php" method="post">
   <li><input type="submit" value="Consultar por navieras y buques" ></li>
   </form>
-  <form action="/~grupo100/Entrega3/itinerario_validacion.php" method="post">
+  <form action="/~grupo100/Entrega3/consultas/itinerario_validacion.php" method="post">
   <li><input type="submit" value="Agregar itinerario a un buque" ></li>
   </form>
   <li><a href="/consultas/puertos.php">Consultar por puertos</a></li>
