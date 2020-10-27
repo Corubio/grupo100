@@ -22,10 +22,12 @@
     echo "<br>";
     echo "Ingrese el nuevo itinerario:";
     echo "<br>";
-    echo "<form action='/~grupo100/Entrega3/acciones/itinerario.php' method='post'>";
-    echo "<label for='fecha'>Nuevo Itinerario</label>";
+    echo "<form action='/~grupo100/Entrega3/itinerario.php' method='post'>";
+    echo "<label for='fecha'>Nuevo Itinerario </label>";
+    echo '<input type="date" name="fecha">';
+    echo "<br>";
+    echo "<label for='lugar'>Lugar de atraque </label>";
     echo '<input type="text" name="lugar"> <input type="submit" value="Enviar datos"></p>';
-    echo "<label for='lugar'>Lugar de atraque</label>";
     echo '</form>';
   }
   else {
