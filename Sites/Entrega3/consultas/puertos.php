@@ -2,7 +2,7 @@
 <html>
 <body>
 <?php
-  require("../acciones/conectarg127.php");
+  require("../acciones/connectag127.php");
   $query = "SELECT region.nombre, ciudad.nombre, puertos.nombre, puertos.pid
     WHERE region.regid = estaenregion.regid AND estaenregion.ciuid = ciudad.ciuid
       AND ciudad.ciuid = seencuentra.ciuid AND seencuentra.pid = puertos.pid;";

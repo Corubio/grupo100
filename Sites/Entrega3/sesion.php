@@ -16,7 +16,7 @@
   <form action="/~grupo100/Entrega3/consultas/itinerario_validacion.php" method="post">
   <li><input type="submit" value="Agregar itinerario a un buque" ></li>
   </form>
-  <li><a href="/consultas/puertos.php">Consultar por puertos</a></li>
+  <li><a href="./consultas/puertos.php">Consultar por puertos</a></li>
   <li><a href="index.php">Cerrar Sesion</a></li>
   </body>
 </html>
