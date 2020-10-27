@@ -4,6 +4,7 @@
 <?php
   require("../acciones/connectg127.php");
   $query = "SELECT region.nombre, ciudad.nombre, puertos.nombre, puertos.pid
+    FROM region, estaenregion, ciudad, seencuentra, puertos
     WHERE region.regid = estaenregion.regid AND estaenregion.ciuid = ciudad.ciuid
       AND ciudad.ciuid = seencuentra.ciuid AND seencuentra.pid = puertos.pid;";
   
