@@ -28,12 +28,15 @@
     echo "<br>";
     echo "Ingrese el nuevo itinerario:";
     echo "<br>";
-    echo '<input type="date" name="fecha"> <input type="submit" value="Enviar datos"></p>';
+    echo '<input type="date" name="fecha">';
+    echo "<br>";
+    echo '<input type="text" name="lugar de atraque"> <input type="submit" value="Enviar datos"></p>';
     header('Location: http://codd.ing.puc.cl/~grupo100/Entrega3/itinerario.php');
     echo '</form>';
   }
   else {
     echo "No eres capitán, por lo que no puedes realizar esta funcionalidad";
   }
-  echo '<br><a href="../sesion.php">Volver</a>';
+  echo '<br><a href="sesion.php">Volver</a>';
   ?>
+
