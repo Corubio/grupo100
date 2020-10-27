@@ -16,22 +16,16 @@
     echo "<br>";
     echo "Buque: ".$buque."";
     echo "<br>";
-    echo "Patente: ".$patente."";
-    echo "<br>";
-    echo "Tipo: ".$tipo."";
-    echo "<br>";
-    echo "Naviera: ".$naviera."";
-    echo "<br>";
     echo "Proximo Itinerario: ".$proximo."";
     echo "<br>";
     echo "Ultimos puertos: ".$previos."";
     echo "<br>";
     echo "Ingrese el nuevo itinerario:";
     echo "<br>";
-    echo '<input type="date" name="fecha">';
-    echo "<br>";
-    echo '<input type="text" name="lugar de atraque"> <input type="submit" value="Enviar datos"></p>';
-    header('Location: http://codd.ing.puc.cl/~grupo100/Entrega3/itinerario.php');
+    echo "<form action='/~grupo100/Entrega3/acciones/itinerario.php' method='post'>";
+    echo "<label for='fecha'>Nuevo Itinerario</label>";
+    echo '<input type="text" name="lugar"> <input type="submit" value="Enviar datos"></p>';
+    echo "<label for='lugar'>Lugar de atraque</label>";
     echo '</form>';
   }
   else {
@@ -39,4 +33,3 @@
   }
   echo '<br><a href="sesion.php">Volver</a>';
   ?>
-
