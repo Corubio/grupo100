@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html>
 <body>
+<h2>Puertos:</h2>
 <?php
   require("../acciones/connectg127.php");
   $query = "SELECT region.nombre, ciudad.nombre, puertos.nombre, puertos.pid
@@ -29,12 +30,12 @@
           <td>$p[1]</td>
           <td>$p[2]</td>
           <td>
-            <form action='./puertos_fecha.php' method='post'>
+            <form action='./puertos_fecha.php' method='get'>
               <input type='submit' value='Buscar por fechas'>
             </form>
           </td>
           <td>
-            <form action='./pedir_permisos.php' method='post'>
+            <form action='./pedir_permisos.php' method='get'>
               <input type='submit' value='Solicitar Permiso'>
             </form>
           </td>
@@ -42,6 +43,8 @@
       }
     ?>
   </table>
+
+  <br><a href="../sesion.php">Volver</a>
 
 </body>
 </html>
