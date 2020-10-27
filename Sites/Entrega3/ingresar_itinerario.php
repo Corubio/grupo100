@@ -11,7 +11,7 @@
   $naviera = $_SESSION['naviera'];
   $proximo = $_SESSION['proximo'];
   $previos = $_SESSION['previos'];
-  if ($buque == 'Usted no es capitán') {
+  if ($buque != 'Usted no es capitán') {
     echo "Nombre: ".$usuario."";
     echo "<br>";
     echo "Buque: ".$buque."";
@@ -25,7 +25,11 @@
     echo "Proximo Itinerario: ".$proximo."";
     echo "<br>";
     echo "Ultimos puertos: ".$previos."";
+    echo "<br>";
+    echo "Ingrese el nuevo itinerario:";
+    echo "<br>";
     echo '<input type="date" name="fecha"> <input type="submit" value="Enviar datos"></p>';
+    header('Location: http://codd.ing.puc.cl/~grupo100/Entrega3/itinerario.php');
     echo '</form>';
   }
   else {
