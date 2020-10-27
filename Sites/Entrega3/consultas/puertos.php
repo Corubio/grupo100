@@ -23,21 +23,21 @@
 
     <?php
       foreach ($fs as $p) {
-        echo '<tr>
-          <td>'.$p[0].'</td>
-          <td>'.$p[1].'</td>
-          <td>'.$p[2].'</td>
+        echo "<tr>
+          <td>$p[0]</td>
+          <td>$p[1]</td>
+          <td>$p[2]</td>
           <td>
-            <form action="./puertos_fecha.php" method="post">
-              <input type="submit" value="Buscar por fechas">
+            <form action='./puertos_fecha.php' method='post'>
+              <input type='submit' value='Buscar por fechas'>
             </form>
           </td>
           <td>
-            <form action="./pedir_permisos.php" method="post">
-              <input type="submit" value="Solicitar Permiso">
+            <form action='./pedir_permisos.php' method='post'>
+              <input type='submit' value='Solicitar Permiso'>
             </form>
           </td>
-        </tr>';
+        </tr>";
       }
     ?>
   </table>
