@@ -24,9 +24,9 @@
     <?php
       foreach ($fs as $p) {
         echo '<tr>
-          <td>$p[0]</td>
-          <td>$p[1]</td>
-          <td>$p[2]</td>
+          <td>'.$p[0].'</td>
+          <td>'.$p[1].'</td>
+          <td>'.$p[2].'</td>
           <td>
             <form action="./puertos_fecha.php" method="post">
               <input type="submit" value="Buscar por fechas">
