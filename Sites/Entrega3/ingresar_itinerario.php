@@ -24,7 +24,7 @@
     echo "<br>";
     echo "<form action='/~grupo100/Entrega3/itinerario.php' method='post'>";
     echo "<label for='fecha'>Nuevo Itinerario </label>";
-    echo '<input type="datetimr-local" name="fecha">';
+    echo '<input type="datetime-local" name="fecha">';
     echo "<br>";
     echo "<label for='lugar'>Lugar de atraque </label>";
     echo '<input type="text" name="lugar"> <input type="submit" value="Enviar datos"></p>';
