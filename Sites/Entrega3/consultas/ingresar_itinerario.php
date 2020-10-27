@@ -1,17 +1,30 @@
 <?php
-  require("../acciones/conectar.php");
-    $query = "SELECT DISTINCT buques.nombre FROM buques JOIN personal_definitivo ON buques.id_capitan = personal_definitivo.id;";
-    $result = $db -> prepare($query);
-    $result -> execute();
-    $log = $result -> fetchAll();
-  ?>
-<?php
-  echo '<form action="/~grupo100/Entrega3/consultas/buque_consultado.php" method="get">';
-  foreach ($log as $buque) {
-    echo '<input type="radio" id="'.$buque[1].'" name="naviera" value="'.$buque[1].'">
-          <label for="'.$buque[1].'">'.$buque[0].'</label><br>';
-  }
-  echo '<input type="submit" value="Ingresar">';
+  session_start();
+  $usuario = $_SESSION['usuario'];
+  $edad = $_SESSION['edad'];
+  $sexo = $_SESSION['sexo'];
+  $pasaporte = $_SESSION['pasaporte'];
+  $nacionalidad = $_SESSION['nacionalidad'];
+  $buque = $_SESSION['buque'];
+  $patente = $_SESSION['patente'];
+  $tipo = $_SESSION['tipo'];
+  $naviera = $_SESSION['naviera'];
+  $proximo = $_SESSION['proximo'];
+  $previos = $_SESSION['previos'];
+  echo "Nombre: ".$usuario."";
+  echo "<br>";
+  echo "Buque: ".$buque."";
+  echo "<br>";
+  echo "Patente: ".$patente."";
+  echo "<br>";
+  echo "Tipo: ".$tipo."";
+  echo "<br>";
+  echo "Naviera: ".$naviera."";
+  echo "<br>";
+  echo "Proximo Itinerario: ".$proximo."";
+  echo "<br>";
+  echo "Ultimos puertos: ".$previos."";
+  echo '<input type="date" name="fecha"> <input type="submit" value="Enviar datos"></p>';
   echo '</form>';
   echo '<br><a href="../sesion.php">Volver</a>';
   ?>
