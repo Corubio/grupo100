@@ -51,7 +51,7 @@ def get_user(uid):
         consulta.append(i)
     return jsonify(consulta)
 
-@app.route("/messages-<int:uid1>&<int:uid2>")
+@app.route("/messages&<int:uid1>&<int:uid2>")
 def get_messages_between(uid1, uid2):
     consulta = [i for i in mensajes.find( {"$and": [
         {"$or": [{"sender":uid1},{"sender":uid2}]},
