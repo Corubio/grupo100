@@ -2,8 +2,19 @@ from pymongo import MongoClient, ASCENDING
 from flask import Flask, jsonify
 import os
 
-client = MongoClient('localhost', connect=False)
-db = client["test"]
+
+USER = "grupo100"
+PASS = "grupo100"
+DATABASE = "grupo100"
+
+URL = f"mongodb://{USER}:{PASS}@gray.ing.puc.cl/{DATABASE}?authSource=admin"
+client = MongoClient(URL)
+
+db = client["grupo100"]
+
+# Local Host
+# client = MongoClient('localhost', connect=False)
+# db = client["test"]
 
 usuarios = db.usuarios
 mensajes = db.mensajes
@@ -44,7 +55,7 @@ def get_user(uid):
 def get_messages_between(uid1, uid2):
     consulta = [i for i in mensajes.find( {"$and": [
         {"$or": [{"sender":uid1},{"sender":uid2}]},
-        {"$or": [{"receptant":uid1},{"receptant":uid2}]}]}, 
+        {"$or": [{"receptant":uid1},{"receptant":uid2}]}]},
         {"_id":0}).sort("date", ASCENDING)]
     return jsonify(consulta)
 
@@ -126,6 +137,7 @@ def get_busqueda(ojala, necesario, prohibido, uid):
                     consulta2.append(i)
             consulta_final = consulta2
     return jsonify(consulta_final)
+
 
 if os.name == 'nt':
     app.run()
