@@ -1,5 +1,5 @@
 from pymongo import MongoClient, ASCENDING
-from flask import Flask, jsonify
+from flask import Flask, jsonify, request
 import os
 
 
@@ -39,13 +39,13 @@ def get_message(mid):
 
 @app.route("/users")
 def get_users():
-    consulta = [i for i in usuarios.find({},{"_id":0}).sort("uid", ASCENDING)]
+    consulta = [i for i in usuarios.find({},{"_id":0}).sort("userId", ASCENDING)]
     return jsonify(consulta)
 
-@app.route("/users/<int:uid>")
-def get_user(uid):
-    consulta = [i for i in usuarios.find({"uid":uid},{"_id":0})]
-    mensajes_usuario = [i for i in mensajes.find({"sender":uid},
+@app.route("/users/<int:userId>")
+def get_user(userId):
+    consulta = [i for i in usuarios.find({"userId":userId},{"_id":0})]
+    mensajes_usuario = [i for i in mensajes.find({"sender":userId},
         {"_id":0}).sort("date", ASCENDING)]
     for i in mensajes_usuario:
         consulta.append(i)
@@ -60,57 +60,59 @@ def get_messages_between(uid1, uid2):
     return jsonify(consulta)
 
 #Rutas Busqueda de texto
-@app.route("/text-search&&&&", defaults={'ojala': ''})
-def get_busqueda_ojala(ojala):
-    if ojala == '':
+@app.route("/text-search&&&&", defaults={'desired': ''})
+def get_busqueda_ojala(desired):
+    if desired == '':
         consulta = [i for i in mensajes.find({},{"_id":0}).sort("mid", ASCENDING)]
     return jsonify(consulta)
 
-@app.route("/text-search&&<necesario>&<prohibido>&<int:uid>", defaults={'ojala': ''})
-@app.route("/text-search&<ojala>&&<prohibido>&<int:uid>", defaults={'necesario': ''})
-@app.route("/text-search&<ojala>&<necesario>&&<int:uid>", defaults={'prohibido': ''})
-@app.route("/text-search&<ojala>&<necesario>&<prohibido>&", defaults={'uid': 0})
-@app.route("/text-search&<ojala>&<necesario>&&", defaults={'uid': 0, 'prohibido': ''})
-@app.route("/text-search&<ojala>&&<prohibido>&", defaults={'uid': 0, 'necesario': ''})
-@app.route("/text-search&&<necesario>&<prohibido>&", defaults={'uid': 0, 'ojala': ''})
-@app.route("/text-search&<ojala>&&&<int:uid>", defaults={'prohibido': '', 'necesario': ''})
-@app.route("/text-search&&<necesario>&&<int:uid>", defaults={'prohibido': '', 'ojala': ''})
-@app.route("/text-search&&&<prohibido>&<int:uid>", defaults={'necesario': '', 'ojala': ''})
-@app.route("/text-search&<ojala>&<necesario>&<prohibido>&<int:uid>")
-@app.route("/text-search&<ojala>&&&", defaults={'necesario': '', 'prohibido': '', 'uid': 0})
-@app.route("/text-search&&<necesario>&&", defaults={'ojala': '', 'prohibido': '', 'uid': 0})
-@app.route("/text-search&&&<prohibido>&", defaults={'ojala': '', 'necesario': '', 'uid': 0})
-@app.route("/text-search&&&&<int:uid>", defaults={'ojala': '', 'necesario': '', 'prohibido': ''})
-def get_busqueda(ojala, necesario, prohibido, uid):
+@app.route("/text-search&&<required>&<forbidden>&<int:userId>", defaults={'desired': ''})
+@app.route("/text-search&<desired>&&<forbidden>&<int:userId>", defaults={'required': ''})
+@app.route("/text-search&<desired>&<required>&&<int:userId>", defaults={'forbidden': ''})
+@app.route("/text-search&<desired>&<required>&<forbidden>&", defaults={'userId': 0})
+@app.route("/text-search&<desired>&<required>&&", defaults={'userId': 0, 'forbidden': ''})
+@app.route("/text-search&<desired>&&<forbidden>&", defaults={'userId': 0, 'required': ''})
+@app.route("/text-search&&<required>&<forbidden>&", defaults={'userId': 0, 'desired': ''})
+@app.route("/text-search&<desired>&&&<int:userId>", defaults={'forbidden': '', 'required': ''})
+@app.route("/text-search&&<required>&&<int:userId>", defaults={'forbidden': '', 'desired': ''})
+@app.route("/text-search&&&<forbidden>&<int:userId>", defaults={'required': '', 'desired': ''})
+@app.route("/text-search&<desired>&<required>&<forbidden>&<int:userId>")
+@app.route("/text-search&<desired>&&&", defaults={'required': '', 'forbidden': '', 'userId': 0})
+@app.route("/text-search&&<required>&&", defaults={'desired': '', 'forbidden': '', 'userId': 0})
+@app.route("/text-search&&&<forbidden>&", defaults={'desired': '', 'required': '', 'userId': 0})
+@app.route("/text-search&&&&<int:userId>", defaults={'desired': '', 'required': '', 'forbidden': ''})
+def get_busqueda(desired, required, forbidden, userId):
     consulta_final = []
-    if ojala != '':
-        ojala = ojala.split(';')
+    if desired != '':
+        desired = desired.split(';')
         mensajes.create_index([("message", 'text')])
         consulta = []
-        for j in ojala:
+        for j in desired:
             buscar = j
             consulta_porfrase = [i for i in mensajes.find({"$text": {"$search": buscar}},
                 {"_id": 0}).sort("mid", ASCENDING)]
             for h in consulta_porfrase:
                 consulta.append(h)
         consulta_final = consulta
-    if necesario != '':
-        necesario = necesario.split(';')
+    else: desired = []
+    if required != '':
+        required = required.split(';')
         mensajes.create_index([("message", 'text')])
         consulta = []
-        for j in necesario:
+        for j in required:
             buscar = '\"' + j + '\"'
             consulta_porfrase = [i for i in mensajes.find({"$text": {"$search": buscar}},
                 {"_id": 0}).sort("mid", ASCENDING)]
             for h in consulta_porfrase:
                 consulta.append(h)
         consulta_final = consulta
-    if prohibido != '':
-        prohibido = prohibido.split(';')
+    else: required = []
+    if forbidden != '':
+        forbidden = forbidden.split(';')
         mensajes.create_index([("message", 'text')])
         consulta_prohibida = []
         mensajes_totales = [i for i in mensajes.find({},{"_id":0}).sort("mid", ASCENDING)]
-        for j in prohibido:
+        for j in forbidden:
             buscar = j
             consulta_porfrase = [i for i in mensajes.find({"$text": {"$search": buscar}},
                 {"_id":0}).sort("mid", ASCENDING)]
@@ -126,8 +128,9 @@ def get_busqueda(ojala, necesario, prohibido, uid):
                 if j not in consulta_prohibida:
                     consulta.append(j)
             consulta_final = consulta
-    if uid != 0:
-        consulta = [i for i in mensajes.find({"sender":uid}, {"_id":0}).sort("date", ASCENDING)]
+    else: forbidden = []
+    if userId != 0:
+        consulta = [i for i in mensajes.find({"sender":userId}, {"_id":0}).sort("date", ASCENDING)]
         if consulta_final == []:
             consulta_final = consulta
         else:
@@ -136,8 +139,32 @@ def get_busqueda(ojala, necesario, prohibido, uid):
                 if i in consulta:
                     consulta2.append(i)
             consulta_final = consulta2
-    return jsonify(consulta_final)
+        userId = [userId]
+    else: userId = []
+    data = {
+        "desired" : desired,
+        "required" : required,
+        "forbidden" : forbidden,
+        "userId" : userId
+    }
+    return jsonify(data, consulta_final)
 
+#agregar mensaje
+@app.route("/messages_add", methods = ['POST'])
+def post_crear_mensaje():
+    formato = ['message', 'sender', 'receptant', 'lat', 'long', 'date']
+    data = {key: request.json[key] for key in formato}
+    agregar = usuarios.insert_one(data)
+    if (agregar):
+        return jsonify({'respuesta': 'Mensaje agregado'})
+    else:
+        return jsonify({'respuesta': 'Mensaje no agregado'})
+
+#borrar mensaje
+@app.route("/messages/:<int:mid>", methods = ['DELETE'])
+def post_borrar_mensaje(mid):
+    mensajes.delete_one(mensajes.find({"mid": mid}, {"_id": 0}))
+    return jsonify({'respuesta': 'El mensaje se ha eliminado'})
 
 if os.name == 'nt':
     app.run()
