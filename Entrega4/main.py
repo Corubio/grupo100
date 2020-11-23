@@ -143,10 +143,13 @@ def post_crear_mensaje():
         return jsonify({'respuesta': 'Mensaje no agregado'})
 
 #borrar mensaje
-@app.route("/messages/:<int:mid>", methods = ['DELETE'])
+@app.route("/message/:<int:mid>", methods = ['DELETE'])
 def post_borrar_mensaje(mid):
-    mensajes.delete_one(mensajes.find({"mid": mid}, {"_id": 0}))
-    return jsonify({'respuesta': 'El mensaje se ha eliminado'})
+    mensaje = mensajes.find_one_and_delete({"mid": mid}, {"_id": 0})
+    if mensaje.deleted_count:
+        return jsonify({'respuesta': 'El mensaje se ha eliminado'})
+    else:
+        return jsonify({'respuesta': 'El mensaje no existe / no se ha eliminado'})
 
 if os.name == 'nt':
     app.run()
